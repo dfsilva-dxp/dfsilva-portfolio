@@ -12,9 +12,6 @@ export default {
   }
 } as Meta;
 
-export const Basic: Story<ComponentProps<typeof Main>> = ({
-  title,
-  description
-}) => {
-  return <Main title={title} description={description} />;
+export const Basic: Story<ComponentProps<typeof Main>> = () => {
+  return <Main />;
 };

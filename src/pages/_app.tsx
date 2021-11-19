@@ -7,7 +7,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>React Avançado - Boilerplate</title>
+        <title>Daniel Silva &bull; Front-end Developer</title>
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="shortcut icon"
