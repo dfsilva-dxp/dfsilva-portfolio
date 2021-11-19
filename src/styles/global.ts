@@ -9,14 +9,16 @@ const GlobalStyles = createGlobalStyle`
     --gray-200: #afb2b1;
     --gray-500: #808080;
     --gray-800: #494d4b;
+    --gray-900: #262626;
 
-    --green-500: #04d361;
+    --green-500: #00ff5e;
 
     --red-400: #E83F5B;
 
     --yellow-500: #FFC727;
 
-    --purple-500: #8257e5;
+    --purple-400: #A839FF;
+    --purple-500: #701CDA;
 
     /* FONTS */
     --ft-8: 0.5rem;
