@@ -1,10 +1,9 @@
-import Main from "../components/Main";
+import Layout from "components/Layout";
 
 export default function Home() {
   return (
-    <Main
-      title="Boilerplate"
-      description="TypeScript, React, NextJS e Styled Componets"
-    />
+    <Layout>
+      <h1>Content</h1>
+    </Layout>
   );
 }
