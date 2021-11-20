@@ -6,19 +6,18 @@ const GlobalStyles = createGlobalStyle`
     --white: #fff;
     --gray-50: #f7f8fa;
     --gray-100: #e6e8eb;
-    --gray-200: #afb2b1;
+    --gray-200: #E0E0E0;
     --gray-500: #808080;
-    --gray-800: #494d4b;
-    --gray-900: #262626;
+    --gray-700: #494d4b;
+    --gray-800: #2D2E32;
+    --gray-900: #25262A;
+    --gray-950: #141414;
 
-    --green-500: #00ff5e;
+    --green-500: #6EF3A5;
 
-    --red-400: #E83F5B;
+    --orange-500: #FC5950;
 
-    --yellow-500: #FFC727;
-
-    --purple-400: #A839FF;
-    --purple-500: #701CDA;
+    --purple-500: #A839FF;
 
     /* FONTS */
     --ft-8: 0.5rem;
@@ -65,7 +64,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background: var(--gray-50);
-    font-family: -apple-system, BlinkMacSystemFont, 'Fira Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--gray-500);
     line-height: 1.5;
     font-weight: 400;
@@ -76,9 +75,9 @@ const GlobalStyles = createGlobalStyle`
   textarea,
   button,
   label {
-    font: 400 var(--ft-15)/var(--ft-15) "Fira Sans", sans-serif;
+    font: 400 var(--ft-15)/var(--ft-15) "Poppins", sans-serif;
     outline: 0;
-    color: var(--gray-800);
+    color: var(--gray-700);
   }
 
   h1,
@@ -89,7 +88,7 @@ const GlobalStyles = createGlobalStyle`
   h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--gray-800);
+    color: var(--gray-700);
   }
 
   ol,
