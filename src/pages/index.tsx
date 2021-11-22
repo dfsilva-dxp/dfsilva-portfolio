@@ -1,9 +1,12 @@
 import Layout from "components/Layout";
+import Tags from "components/Tags";
+import Banner from "components/Banner";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Content</h1>
+      <Tags />
+      <Banner />
     </Layout>
   );
 }
