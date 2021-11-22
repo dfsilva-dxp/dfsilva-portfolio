@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
+  padding-top: var(--px-80);
   width: 100%;
-  height: auto;
+  height: table;
   display: grid;
-  grid-template-rows: var(--px-80) auto var(--px-80);
+  grid-template-rows: auto var(--px-80);
 `;
 
 export const Body = styled.section`
