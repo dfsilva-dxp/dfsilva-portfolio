@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: grid;
-  grid-template-rows: var(--px-80) 1fr var(--px-80);
-  gap: var(--px-40);
+  grid-template-rows: var(--px-80) auto var(--px-80);
 `;
 
 export const Body = styled.section`
-  overflow-y: auto;
+  min-height: calc(100vh - 5rem);
 `;
