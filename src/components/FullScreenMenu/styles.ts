@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FullScreenNav = styled.div`
-  z-index: 10;
+  z-index: 5;
   position: fixed;
   top: 0;
   width: 0%;
@@ -23,7 +23,7 @@ export const FullScreenNav = styled.div`
     transition-delay: 0s;
   }
   .content {
-    z-index: 200;
+    z-index: 6;
     position: absolute;
     top: 0;
     left: 0;

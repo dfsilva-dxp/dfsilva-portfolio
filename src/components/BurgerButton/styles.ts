@@ -15,12 +15,12 @@ export const BtnNavContainer = styled.button`
   border: none;
   outline: transparent;
   cursor: pointer;
-  z-index: 20;
+  z-index: 200;
 
   .btn-nav {
     width: 100%;
     height: 2px;
-    background: var(--gray-800);
+    background: var(--white);
     top: 0;
     transition: all ease 0.2s;
     position: relative;
@@ -30,7 +30,7 @@ export const BtnNavContainer = styled.button`
     content: "";
     position: absolute;
     left: 0;
-    background: var(--gray-800);
+    background: var(--white);
     height: 100%;
     transition: all ease 0.3s;
   }
@@ -48,7 +48,6 @@ export const BtnNavContainer = styled.button`
   }
   &.close-menu .btn-nav {
     transform: rotate(-45deg);
-    background: var(--white);
   }
   &.close-menu .btn-nav:after {
     opacity: 0;
@@ -59,6 +58,5 @@ export const BtnNavContainer = styled.button`
     transform: rotate(90deg);
     width: 100%;
     transition: all ease 0.2s;
-    background: var(--white);
   }
 `;

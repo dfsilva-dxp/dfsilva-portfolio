@@ -4,8 +4,9 @@ export const Header = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--white);
+  background: var(--gray-950);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  z-index: 10;
 
   .container {
     display: flex;

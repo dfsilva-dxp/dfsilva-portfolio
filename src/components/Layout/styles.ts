@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  padding-top: var(--px-80);
   width: 100%;
   height: table;
   display: grid;
