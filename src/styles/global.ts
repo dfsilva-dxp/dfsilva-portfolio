@@ -32,6 +32,8 @@ const GlobalStyles = createGlobalStyle`
     --ft-36: 2.25rem;
     --ft-48: 3rem;
     --ft-54: 3.375rem;
+    --ft-72: 4.5rem;
+
 
     /* BOX-SIZE */
     --px-4: 0.25rem;
@@ -69,7 +71,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--gray-500);
     line-height: 1.5;
     font-weight: 400;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   input,
@@ -171,19 +173,19 @@ const GlobalStyles = createGlobalStyle`
     left: auto;
     right: 0;
   }
-  /*
+
   ::-webkit-scrollbar {
     width: 7px !important;
   }
   ::-webkit-scrollbar-track {
-    background: var(--gray-100) !important;
+    background: var(--gray-50) !important;
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--purple-400) !important;
+    background: var(--gray-900) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--purple-500) !important;
-  } */
+    background: var(--gray-800) !important;
+  }
 `;
 
 export default GlobalStyles;
