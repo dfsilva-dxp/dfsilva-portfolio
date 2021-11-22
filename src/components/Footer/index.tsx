@@ -2,9 +2,9 @@ import * as S from "./styles";
 
 const Footer = () => {
   return (
-    <S.Wrapper>
-      <h1>Footer</h1>
-    </S.Wrapper>
+    <S.Footer>
+      <img src="/img/copyright.svg" alt="Copyright" />
+    </S.Footer>
   );
 };
 
