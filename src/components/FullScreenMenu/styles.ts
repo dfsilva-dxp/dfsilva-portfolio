@@ -5,11 +5,13 @@ export const FullScreenNav = styled.div`
   position: fixed;
   top: 0;
   width: 0%;
-  height: 100%;
+  height: 100vh;
+  padding-top: var(--px-80);
   transition-delay: 1.1s;
 
   .bg1,
   .bg2 {
+    margin-top: var(--px-80);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -28,8 +30,8 @@ export const FullScreenNav = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    max-width: none;
+    height: 100vh;
+    padding-top: var(--px-80);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +41,6 @@ export const FullScreenNav = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
     opacity: 0;
     transition: all 0.3s ease 0s;
     padding: 0;
@@ -48,7 +49,7 @@ export const FullScreenNav = styled.div`
   & ul::after,
   & ul::before {
     color: var(--gray-200);
-    font-size: 16px;
+    font-size: var(--ft-16);
     font-family: "La Belle Aurore", cursive;
     position: absolute;
   }
@@ -83,12 +84,12 @@ export const FullScreenNav = styled.div`
     opacity: 1;
   }
   & ul li a span {
-    font-size: 14px;
+    font-size: var(--ft-14);
     font-weight: 400;
     margin-right: 5px;
   }
   & ul li a span:last-child {
-    font-size: 55px;
+    font-size: var(--ft-54);
   }
   &.active {
     width: 100%;
