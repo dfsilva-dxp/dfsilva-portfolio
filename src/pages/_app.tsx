@@ -25,7 +25,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@200;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=La+Belle+Aurore&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@200;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
