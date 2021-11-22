@@ -8,6 +8,6 @@ export const Main = styled.main`
   gap: var(--px-40);
 `;
 
-export const Wrapper = styled.section`
+export const Body = styled.section`
   overflow-y: auto;
 `;

@@ -13,9 +13,9 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <S.Main>
       <Header />
-      <S.Wrapper>
+      <S.Body>
         <div className="container">{children}</div>
-      </S.Wrapper>
+      </S.Body>
       <Footer />
     </S.Main>
   );
