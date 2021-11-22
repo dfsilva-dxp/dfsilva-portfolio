@@ -66,9 +66,9 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background: var(--gray-50);
+    background: var(--gray-800);
     font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--gray-500);
+    color: var(--white);
     line-height: 1.5;
     font-weight: 400;
     overflow-x: hidden;
@@ -80,7 +80,6 @@ const GlobalStyles = createGlobalStyle`
   label {
     font: 400 var(--ft-15)/var(--ft-15) "Poppins", sans-serif;
     outline: 0;
-    color: var(--gray-700);
   }
 
   h1,
@@ -91,7 +90,6 @@ const GlobalStyles = createGlobalStyle`
   h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    color: var(--gray-700);
   }
 
   ol,

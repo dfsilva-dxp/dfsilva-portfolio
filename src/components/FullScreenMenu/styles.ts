@@ -19,7 +19,7 @@ export const FullScreenNav = styled.div`
     transition: all 0.7s ease 0.3s;
   }
   .bg2 {
-    background: var(--gray-950);
+    background: var(--gray-900);
     transition-delay: 0s;
   }
   .content {

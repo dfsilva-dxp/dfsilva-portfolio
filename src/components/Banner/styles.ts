@@ -32,7 +32,7 @@ export const Into = styled.div`
     background: var(--green-500);
     padding: var(--px-4) var(--px-10);
     border-radius: var(--px-4);
-    color: var(--gray-900);
+    color: var(--gray-950);
     margin-bottom: var(--px-20);
   }
 
