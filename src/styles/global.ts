@@ -27,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
     --ft-15: 0.9375rem;
     --ft-16: 1rem;
     --ft-20: 1.25rem;
+    --ft-22: 1.375rem;
     --ft-24: 1.5rem;
     --ft-36: 2.25rem;
     --ft-48: 3rem;
@@ -127,7 +128,7 @@ const GlobalStyles = createGlobalStyle`
   .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 var(---px-16);
+    padding: 0 var(--px-16);
 
     @media (min-width: 576px) {
       max-width: 540px;
@@ -145,7 +146,31 @@ const GlobalStyles = createGlobalStyle`
       max-width: 1640px;
     }
   }
-
+  .custom-font {
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  .simple-btn {
+    position: relative;
+    padding: 7px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .simple-btn:after {
+    content: "";
+    width: 45%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .simple-btn.right:after {
+    left: auto;
+    right: 0;
+  }
   /*
   ::-webkit-scrollbar {
     width: 7px !important;
