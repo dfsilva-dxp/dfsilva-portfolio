@@ -6,8 +6,12 @@ export const Info = styled.div`
   border-radius: var(--px-8);
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--px-10);
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &::before {
     content: "";

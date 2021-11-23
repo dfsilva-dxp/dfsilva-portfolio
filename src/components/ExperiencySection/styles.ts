@@ -21,12 +21,13 @@ export const Display = styled.div`
   }
 
   h1 {
-    font-size: 7.5rem;
-    line-height: 7.5rem;
+    font-size: 4.5rem;
     word-wrap: break-word;
 
     @media (min-width: 768px) {
       width: 3.7ch;
+      font-size: 7.5rem;
+      line-height: 7.5rem;
     }
   }
 `;

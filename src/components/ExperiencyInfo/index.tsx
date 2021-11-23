@@ -7,7 +7,7 @@ const ExperiencyInfo = () => {
     <>
       <S.Info>
         <div className="company-info">
-          <h4>gwcloud.company</h4>
+          <h4>Front-end Developer</h4>
           <p>
             Responsável por desenvolver a interface de aplicações usando
             técnicas de UX/UI Design e replicar o protótipo usando HTML5,
@@ -15,7 +15,7 @@ const ExperiencyInfo = () => {
           </p>
         </div>
         <div className="skills">
-          <h4>Front-end Developer</h4>
+          <h4>gwcloud.company</h4>
           <Skills
             skills={[
               "HTML",
@@ -32,7 +32,7 @@ const ExperiencyInfo = () => {
       </S.Info>
       <S.Info>
         <div className="company-info">
-          <h4>Globalweb Corp.</h4>
+          <h4>Ponto focal - Field Service</h4>
           <p>
             Acompanhamento de desempenho dos colaboradores, aplicação de
             treinamentos a fim de garantir a melhoria contínua do fluxo
@@ -41,7 +41,7 @@ const ExperiencyInfo = () => {
           </p>
         </div>
         <div className="skills">
-          <h4>Ponto focal - Field Service</h4>
+          <h4>Globalweb Corp.</h4>
           <Skills
             skills={[
               "SLA",
