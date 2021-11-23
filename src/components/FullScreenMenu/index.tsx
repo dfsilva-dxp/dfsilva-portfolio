@@ -25,7 +25,7 @@ const FullScreenMenu = ({ isActive }: FullScreenMenuProps) => {
             </a>
           </li>
           <li>
-            <a href="#cases" className="link">
+            <a href="#education" className="link">
               <span>03.</span>
               <span className="simple-btn">Formação</span>
             </a>
