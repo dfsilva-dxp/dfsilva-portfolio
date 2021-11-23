@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
     --ft-14: 0.875rem;
     --ft-15: 0.9375rem;
     --ft-16: 1rem;
+    --ft-18: 1.125rem;
     --ft-20: 1.25rem;
     --ft-22: 1.375rem;
     --ft-24: 1.5rem;
@@ -41,6 +42,8 @@ const GlobalStyles = createGlobalStyle`
     --px-10: 0.625rem;
     --px-16: 1rem;
     --px-20: 1.25rem;
+    --px-24: 1.5rem;
+    --px-32: 2rem;
     --px-40: 2.5rem;
     --px-48: 3rem;
     --px-64: 4rem;
