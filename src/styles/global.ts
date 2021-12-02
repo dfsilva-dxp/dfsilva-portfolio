@@ -159,7 +159,7 @@ const GlobalStyles = createGlobalStyle`
     @media (min-width: 768px) {
       width: 4.5ch;
       font-size: 5.5rem;
-      line-height: 7.5rem;
+      line-height: 5.5rem;
     }
   }
   p.paragraph-section {
