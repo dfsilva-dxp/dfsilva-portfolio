@@ -152,7 +152,7 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   h1.title-section {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     word-wrap: break-word;
 
