@@ -1,14 +1,19 @@
+import { HTMLAttributes } from "react";
 import * as S from "./styles";
 
-type BurgerButtonProps = {
+interface BurgerButtonProps extends HTMLAttributes<HTMLButtonElement> {
   toggleIsActiveMenu: () => void;
   isActive: boolean;
-};
+}
 
-const BurgerButton = ({ toggleIsActiveMenu, isActive }: BurgerButtonProps) => {
+const BurgerButton = ({
+  toggleIsActiveMenu,
+  isActive,
+  className
+}: BurgerButtonProps) => {
   return (
     <>
-      <S.NavContent>
+      <S.NavContent className={className}>
         <S.BtnNavContainer
           className={!isActive ? "open-menu" : "close-menu"}
           onClick={toggleIsActiveMenu}
