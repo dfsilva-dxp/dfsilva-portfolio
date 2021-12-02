@@ -4,7 +4,7 @@ export const Skills = styled.span`
   display: flex;
   gap: var(--px-8);
   flex-wrap: wrap;
-  font-size: var(--ft-14);
+  font-size: var(--ft-12);
 
   span {
     background: var(--gray-800);
