@@ -1,4 +1,10 @@
-import { useCallback, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState
+} from "react";
 
 import BurgerButton from "components/BurgerButton";
 import FullScreenMenu from "components/FullScreenMenu";
@@ -8,6 +14,30 @@ import NavLinks from "components/NavLinks";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
+  const [scroll, setScroll] = useState(0);
+
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (headingRef.current) {
+      const offset = 120;
+
+      if (scroll >= offset) {
+        headingRef.current.style.backgroundColor = "#25262A";
+      } else {
+        headingRef.current.style.backgroundColor = "transparent";
+      }
+    }
+  }, [scroll]);
+
+  useLayoutEffect(() => {
+    const updateScroll = () => {
+      setScroll(window.scrollY);
+    };
+    window.addEventListener("scroll", updateScroll);
+
+    return () => window.removeEventListener("scroll", updateScroll);
+  }, []);
 
   const toggleIsActiveMenu = useCallback(
     () => setIsActive(!isActive),
@@ -16,7 +46,7 @@ const Header = () => {
 
   return (
     <>
-      <S.Header>
+      <S.Header ref={headingRef}>
         <div className="container">
           <S.Logo>
             daniel

@@ -5,13 +5,13 @@ export const Header = styled.header`
   top: 0;
   width: 100%;
   height: var(--px-80);
-  background: rgba(37, 38, 42, 0.8);
+  background: transparent;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   z-index: 10;
 
   display: flex;
   align-items: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 
   &:hover {
     background: var(--gray-900);
