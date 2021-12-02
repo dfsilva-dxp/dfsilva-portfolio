@@ -7,6 +7,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Display = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--px-40);
