@@ -40,6 +40,7 @@ const GlobalStyles = createGlobalStyle`
     --px-4: 0.25rem;
     --px-8: 0.5rem;
     --px-10: 0.625rem;
+    --px-14: 0.875rem;
     --px-16: 1rem;
     --px-20: 1.25rem;
     --px-24: 1.5rem;
