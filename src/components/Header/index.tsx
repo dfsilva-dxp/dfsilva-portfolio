@@ -4,6 +4,7 @@ import BurgerButton from "components/BurgerButton";
 import FullScreenMenu from "components/FullScreenMenu";
 
 import * as S from "./styles";
+import NavLinks from "components/NavLinks";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
@@ -21,7 +22,9 @@ const Header = () => {
             daniel
             <span>silva</span>
           </S.Logo>
+          <NavLinks className="desktop-view" />
           <BurgerButton
+            className="mobile-view"
             toggleIsActiveMenu={toggleIsActiveMenu}
             isActive={isActive}
           />
