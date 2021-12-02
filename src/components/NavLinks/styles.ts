@@ -26,7 +26,9 @@ export const Wrapper = styled.section`
         color: var(--green-500);
         font-weight: bold;
         position: relative;
-        padding-left: var(--px-16);
+        padding-left: var(--px-40);
+        display: flex;
+        align-items: center;
 
         &:before {
           content: "";
