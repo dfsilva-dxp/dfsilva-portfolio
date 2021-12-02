@@ -21,7 +21,7 @@ export const Display = styled.div`
   }
 `;
 
-export const ExperiencyInfo = styled.div`
+export const WrapInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--px-20);

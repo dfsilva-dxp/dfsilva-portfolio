@@ -1,7 +1,10 @@
-import SchoolingItem from "components/SchoolingItem";
+import { educations } from "utils/data";
+
+import SchoolingItem from "components/Education/SchoolingItem";
+
 import * as S from "./styles";
 
-const EducationSection = () => {
+const EducationWrapper = () => {
   return (
     <S.Wrapper>
       <div className="container">
@@ -15,9 +18,15 @@ const EducationSection = () => {
               com cursos intensivos online.
             </p>
             <S.Schooling>
-              <SchoolingItem />
-              <SchoolingItem />
-              <SchoolingItem />
+              {educations.map((item) => (
+                <SchoolingItem
+                  key={item.id}
+                  universityGraduate={item.universityGraduate}
+                  course={item.course}
+                  school={item.school}
+                  state={item.state}
+                />
+              ))}
             </S.Schooling>
           </div>
         </S.Display>
@@ -26,4 +35,4 @@ const EducationSection = () => {
   );
 };
 
-export default EducationSection;
+export default EducationWrapper;

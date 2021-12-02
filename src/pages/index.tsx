@@ -2,8 +2,8 @@ import Layout from "components/Layout";
 import Tags from "components/Tags";
 import Banner from "components/Banner";
 import Header from "components/Header";
-import ExperiencySection from "components/ExperiencySection";
-import EducationSection from "components/EducationSection";
+import ExperienceWrapper from "components/Experiences/";
+import EducationWrapper from "components/Education/";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       <Header />
       <Tags />
       <Banner />
-      <ExperiencySection />
-      <EducationSection />
+      <ExperienceWrapper />
+      <EducationWrapper />
     </Layout>
   );
 }

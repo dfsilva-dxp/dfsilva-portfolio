@@ -1,7 +1,8 @@
-import ExperiencyInfo from "components/ExperiencyInfo";
+import ExperienceInfo from "components/Experiences/ExperienceInfo";
+
 import * as S from "./styles";
 
-const ExperiencySection = () => {
+const ExperienceWrapper = () => {
   return (
     <S.Wrapper>
       <div className="container">
@@ -14,9 +15,9 @@ const ExperiencySection = () => {
               <strong>Nextjs</strong> e <strong>UI Design</strong>. <br />
               <em>Desenvolver se tornou um hobby favorito</em>.
             </p>
-            <S.ExperiencyInfo>
-              <ExperiencyInfo />
-            </S.ExperiencyInfo>
+            <S.WrapInfo>
+              <ExperienceInfo />
+            </S.WrapInfo>
           </div>
         </S.Display>
       </div>
@@ -24,4 +25,4 @@ const ExperiencySection = () => {
   );
 };
 
-export default ExperiencySection;
+export default ExperienceWrapper;

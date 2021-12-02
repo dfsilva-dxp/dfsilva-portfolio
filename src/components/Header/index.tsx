@@ -6,11 +6,11 @@ import {
   useState
 } from "react";
 
-import BurgerButton from "components/BurgerButton";
-import FullScreenMenu from "components/FullScreenMenu";
+import BurgerButton from "components/Header/BurgerButton";
+import FullScreenMenu from "components/Header/FullScreenMenu";
 
 import * as S from "./styles";
-import NavLinks from "components/NavLinks";
+import NavLinks from "components/Header/NavLinks";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
