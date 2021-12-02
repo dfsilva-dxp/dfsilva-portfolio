@@ -24,8 +24,10 @@ const Header = () => {
 
       if (scroll >= offset) {
         headingRef.current.style.backgroundColor = "#25262A";
+        headingRef.current.style.boxShadow = "0 0 60px rgba(0, 0, 0, 0.05)";
       } else {
         headingRef.current.style.backgroundColor = "transparent";
+        headingRef.current.style.boxShadow = "none";
       }
     }
   }, [scroll]);

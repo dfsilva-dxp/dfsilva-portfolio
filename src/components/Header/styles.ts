@@ -6,16 +6,11 @@ export const Header = styled.header`
   width: 100%;
   height: var(--px-80);
   background: transparent;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   z-index: 10;
 
   display: flex;
   align-items: center;
   transition: background-color 0.15s ease-in-out;
-
-  &:hover {
-    background: var(--gray-900);
-  }
 
   .container {
     display: flex;
