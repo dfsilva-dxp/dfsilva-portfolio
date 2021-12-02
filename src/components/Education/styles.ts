@@ -28,8 +28,11 @@ export const Display = styled.div`
 export const Schooling = styled.div`
   display: grid;
   gap: var(--px-20);
+  margin-bottom: var(--px-40);
 
   @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
   }
 `;
+
+export const Courses = styled.div``;

@@ -1,6 +1,8 @@
-import { educations } from "utils/data";
+import { MdMenuBook, MdOutlineTranslate } from "react-icons/md";
+import { courses, educations } from "utils/data";
 
 import SchoolingItem from "components/Education/SchoolingItem";
+import Courses from "./Courses";
 
 import * as S from "./styles";
 
@@ -28,6 +30,18 @@ const EducationWrapper = () => {
                 />
               ))}
             </S.Schooling>
+            <S.Courses>
+              <Courses
+                title="Cursos intensivos"
+                data={courses}
+                icon={<MdMenuBook />}
+              />
+              <Courses
+                title="Idiomas"
+                data={[{ id: 1, title: "Inglês", time: "Intermediário" }]}
+                icon={<MdOutlineTranslate />}
+              />
+            </S.Courses>
           </div>
         </S.Display>
       </div>

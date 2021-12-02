@@ -50,3 +50,21 @@ export const educations = [
     state: "Concluído"
   }
 ];
+
+export const courses = [
+  {
+    id: 1,
+    title: "Front-End para iniciantes",
+    time: "72h"
+  },
+  {
+    id: 2,
+    title: "UX/UI Design",
+    time: "60h"
+  },
+  {
+    id: 3,
+    title: "React Avançado",
+    time: "90h"
+  }
+];
