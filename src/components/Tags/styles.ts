@@ -8,7 +8,7 @@ export const Tags = styled.section`
     left: 10px;
     font-size: var(--ft-15);
     font-family: "La Belle Aurore", cursive;
-    z-index: 800;
+    z-index: -1;
   }
   .top-tags {
     bottom: auto;
