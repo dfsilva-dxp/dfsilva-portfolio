@@ -6,9 +6,9 @@ const ExperiencySection = () => {
     <S.Wrapper>
       <div className="container">
         <S.Display>
-          <h1>Experiência</h1>
-          <S.ExperiencyContent>
-            <p>
+          <h1 className="title-section">Experiência</h1>
+          <div>
+            <p className="paragraph-section">
               Front-end developer a <strong>4 anos</strong>, apaixonado por
               desenvolvimento com <strong>Reactjs</strong>,{" "}
               <strong>Nextjs</strong> e <strong>UI Design</strong>. <br />
@@ -17,7 +17,7 @@ const ExperiencySection = () => {
             <S.ExperiencyInfo>
               <ExperiencyInfo />
             </S.ExperiencyInfo>
-          </S.ExperiencyContent>
+          </div>
         </S.Display>
       </div>
     </S.Wrapper>
