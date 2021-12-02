@@ -112,6 +112,7 @@ const GlobalStyles = createGlobalStyle`
 
   strong {
     font-weight: 700;
+    color: var(--green-500)
   }
 
   p, a {
@@ -148,6 +149,26 @@ const GlobalStyles = createGlobalStyle`
     }
     @media (min-width: 1920px) {
       max-width: 1640px;
+    }
+  }
+  h1.title-section {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    @media (min-width: 768px) {
+      width: 4.5ch;
+      font-size: 5.5rem;
+      line-height: 7.5rem;
+    }
+  }
+  p.paragraph-section {
+    line-height: var(--px-32);
+    margin-bottom: var(--px-40);
+
+    @media (min-width: 576px) {
+      width: 54ch;
+      word-wrap: break-word;
     }
   }
   .custom-font {
