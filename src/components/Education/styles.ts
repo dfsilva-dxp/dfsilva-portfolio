@@ -35,4 +35,7 @@ export const Schooling = styled.div`
   }
 `;
 
-export const Courses = styled.div``;
+export const Courses = styled.div`
+  display: grid;
+  gap: var(--px-40);
+`;
