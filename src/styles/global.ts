@@ -200,6 +200,9 @@ const GlobalStyles = createGlobalStyle`
     left: auto;
     right: 0;
   }
+  .cursor-pointer {
+    cursor: pointer
+  }
 
   ::-webkit-scrollbar {
     width: 7px !important;
