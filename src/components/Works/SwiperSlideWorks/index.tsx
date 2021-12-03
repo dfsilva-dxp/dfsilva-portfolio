@@ -41,9 +41,11 @@ const SwiperSlideWorks = () => {
           onSlideChange={() => console.log("slide change")}
           onBeforeInit={(swiper) => {
             setTimeout(() => {
-              swiper.navigation.nextEl = navigationNextRef.current;
-              swiper.navigation.prevEl = navigationPrevRef.current;
-              swiper.navigation.update();
+              if (navigationNextRef.current && navigationPrevRef.current) {
+                swiper.navigation.nextEl = navigationNextRef.current;
+                swiper.navigation.prevEl = navigationPrevRef.current;
+                swiper.navigation.update();
+              }
             });
           }}
         >
