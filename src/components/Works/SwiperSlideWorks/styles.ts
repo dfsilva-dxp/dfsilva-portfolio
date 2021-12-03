@@ -36,17 +36,13 @@ export const Wrapper = styled.section`
     height: 480px;
     line-height: 0;
     border-radius: 10px 10px 0 0;
-    border: 1px solid #ff0;
   }
 
   .bg-img {
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; */
+    border: 1px solid #0f0;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .cont {

@@ -5,6 +5,8 @@ export const params = {
   loop: true,
   speed: 600,
   parallax: true,
+  observer: true,
+  observeParents: true,
   breakpoints: {
     320: {
       slidesPerView: 1,

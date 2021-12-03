@@ -1,30 +1,16 @@
 import { useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Parallax } from "swiper";
-SwiperCore.use([Parallax]);
+import SwiperCore, { Parallax, Navigation } from "swiper";
+SwiperCore.use([Parallax, Navigation]);
 
 import { params } from "utils/swiperParams";
 
 import * as S from "./styles";
 
-const breakpoints = {
-  320: {
-    slidesPerView: 1,
-    spaceBetween: 0
-  },
-  640: {
-    slidesPerView: 1,
-    spaceBetween: 0
-  },
-  767: {
-    slidesPerView: 2
-  }
-};
-
 const SwiperSlideWorks = () => {
-  const navigationPrevRef = useRef<HTMLElement>(null);
-  const navigationNextRef = useRef<HTMLElement>(null);
+  const navigationPrevRef = useRef<HTMLSpanElement>(null);
+  const navigationNextRef = useRef<HTMLSpanElement>(null);
 
   return (
     <S.Wrapper>
@@ -35,13 +21,21 @@ const SwiperSlideWorks = () => {
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current
           }}
-          breakpoints={breakpoints}
           onSlideChange={() => console.log("slide change")}
+          onInit={(swiper) => {
+            setInterval(() => {
+              if (navigationPrevRef.current && navigationNextRef.current) {
+                swiper.navigation.prevEl = navigationPrevRef.current;
+                swiper.navigation.nextEl = navigationNextRef.current;
+                swiper.navigation.update();
+              }
+            });
+          }}
         >
           <SwiperSlide>
             <div
               className="item-img bg-img"
-              data-background="img/portfolio/metro/03.jpg"
+              data-background="../../../assets/bg-work-1.jpg"
               data-swiper-parallax="-200"
             ></div>
             <div className="cont">
