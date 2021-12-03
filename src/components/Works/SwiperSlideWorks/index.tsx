@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Parallax, Navigation } from "swiper";
-SwiperCore.use([Parallax, Navigation]);
+import SwiperCore, { Parallax } from "swiper";
+SwiperCore.use([Parallax]);
 
 import * as S from "./styles";
 import { useRef } from "react";
@@ -40,10 +40,11 @@ const SwiperSlideWorks = () => {
           breakpoints={breakpoints}
           onSlideChange={() => console.log("slide change")}
           onBeforeInit={(swiper) => {
-            if (navigationPrevRef.current && navigationNextRef.current) {
+            setTimeout(() => {
               swiper.navigation.nextEl = navigationNextRef.current;
               swiper.navigation.prevEl = navigationPrevRef.current;
-            }
+              swiper.navigation.update();
+            });
           }}
         >
           <SwiperSlide>
