@@ -20,7 +20,7 @@ const WorksWrapper = () => {
             speed={1000}
             breakpoints={{
               320: {
-                slidesPerView: 1.1,
+                slidesPerView: 1,
                 spaceBetween: 10
               },
               640: {
