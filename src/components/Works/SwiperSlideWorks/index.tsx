@@ -20,8 +20,8 @@ const breakpoints = {
 };
 
 const SwiperSlideWorks = () => {
-  const navigationPrevRef = useRef<HTMLElement>(null);
-  const navigationNextRef = useRef<HTMLElement>(null);
+  const navigationPrevRef = useRef<HTMLDivElement>(null);
+  const navigationNextRef = useRef<HTMLDivElement>(null);
 
   return (
     <S.Wrapper>
@@ -88,15 +88,17 @@ const SwiperSlideWorks = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="cursor-pointer swiper-button-next swiper-nav-ctrl simp-next">
-          <span ref={navigationPrevRef} className="simple-btn right">
-            Next
-          </span>
+        <div
+          ref={navigationPrevRef}
+          className="cursor-pointer swiper-button-next swiper-nav-ctrl simp-next"
+        >
+          <span className="simple-btn right">Next</span>
         </div>
-        <div className="cursor-pointer swiper-button-prev swiper-nav-ctrl simp-prev">
-          <span ref={navigationNextRef} className="simple-btn">
-            Prev
-          </span>
+        <div
+          ref={navigationNextRef}
+          className="cursor-pointer swiper-button-prev swiper-nav-ctrl simp-prev"
+        >
+          <span className="simple-btn">Prev</span>
         </div>
       </div>
     </S.Wrapper>

@@ -78,12 +78,10 @@ export const Wrapper = styled.section`
     opacity: 0;
     transform: translateX(-40px);
   }
-
-  .swiper-slide-active .cont h4,
-  .swiper-slide-active .cont h6 {
-    /* this is the visible slide */
-    opacity: 1;
-    transform: translateX(0);
+  .swiper-slide-next .cont h4,
+  .swiper-slide-next .cont h6 {
+    opacity: 0;
+    transform: translateX(-40px);
   }
 
   .simp-next,
