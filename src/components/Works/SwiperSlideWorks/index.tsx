@@ -1,9 +1,12 @@
+import { useRef } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Parallax } from "swiper";
 SwiperCore.use([Parallax]);
 
+import { params } from "utils/swiperParams";
+
 import * as S from "./styles";
-import { useRef } from "react";
 
 const breakpoints = {
   320: {
@@ -27,27 +30,13 @@ const SwiperSlideWorks = () => {
     <S.Wrapper>
       <div className="swiper-container">
         <Swiper
-          spaceBetween={0}
-          slidesPerView={2}
-          centeredSlides={true}
-          loop={true}
-          speed={1000}
-          parallax={true}
+          {...params}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current
           }}
           breakpoints={breakpoints}
           onSlideChange={() => console.log("slide change")}
-          onBeforeInit={(swiper) => {
-            setTimeout(() => {
-              if (navigationNextRef.current && navigationPrevRef.current) {
-                swiper.navigation.nextEl = navigationNextRef.current;
-                swiper.navigation.prevEl = navigationPrevRef.current;
-                swiper.navigation.update();
-              }
-            });
-          }}
         >
           <SwiperSlide>
             <div
