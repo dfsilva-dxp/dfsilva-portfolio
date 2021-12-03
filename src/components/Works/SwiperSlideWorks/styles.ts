@@ -50,7 +50,6 @@ export const Wrapper = styled.section`
   }
 
   .cont {
-    padding-left: 30px;
     opacity: 1;
     transition: all 0.4s;
 

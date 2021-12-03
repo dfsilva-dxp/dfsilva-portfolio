@@ -1,4 +1,3 @@
-// install Swiper modules
 import SwiperSlideWorks from "./SwiperSlideWorks";
 
 import * as S from "./styles";
