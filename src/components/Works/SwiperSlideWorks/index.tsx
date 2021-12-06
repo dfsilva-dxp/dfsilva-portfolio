@@ -1,8 +1,8 @@
 import { useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Parallax } from "swiper";
-SwiperCore.use([Parallax]);
+import SwiperCore, { Parallax, Navigation } from "swiper";
+SwiperCore.use([Parallax, Navigation]);
 
 import { params } from "utils/swiperParams";
 
@@ -13,6 +13,7 @@ const SwiperSlideWorks = () => {
   const navigationNextRef = useRef<HTMLElement>(null);
 
   const onBeforeInit = (Swiper: SwiperCore): void => {
+    console.log(typeof Swiper.params.navigation !== "boolean");
     if (navigationPrevRef.current && navigationNextRef.current) {
       if (typeof Swiper.params.navigation !== "boolean") {
         const navigation = Swiper.navigation;
@@ -27,10 +28,8 @@ const SwiperSlideWorks = () => {
       <div className="swiper-container">
         <Swiper
           {...params}
-          navigation={{
-            prevEl: navigationPrevRef.current,
-            nextEl: navigationNextRef.current
-          }}
+          modules={[Navigation, Parallax]}
+          navigation
           onSlideChange={() => console.log("slide change")}
           onBeforeInit={onBeforeInit}
         >
