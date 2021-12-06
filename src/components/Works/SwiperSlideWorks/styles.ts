@@ -2,47 +2,47 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   .swiper-container {
-    border: 1px solid #fdd;
     width: 100%;
     height: auto;
     position: relative;
   }
   @media (max-width: 575px) {
     .swiper-container {
-      width: 90vw;
+      width: 95vw;
       height: 70vh;
     }
   }
   .swiper {
     width: 100%;
     height: 100%;
-    border: 1px solid #0f0;
   }
 
   .swiper-slide {
-    width: 100%;
-    border: 1px solid #f00;
     text-align: center;
     padding: 0px 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-  }
 
-  .item-img {
-    position: relative;
-    width: 100%;
-    height: 480px;
-    line-height: 0;
-    border-radius: 10px 10px 0 0;
-  }
+    .item-img {
+      opacity: 0.4;
+      position: relative;
+      width: 100%;
+      height: 480px;
+      line-height: 0;
+      border-radius: 10px 10px 0 0;
+      transition: all 0.4s;
+    }
 
-  .bg-img {
-    border: 1px solid #0f0;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    .bg-img {
+      background-image: attr(data-background url);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &.swiper-slide-active .item-img {
+      opacity: 1;
+    }
   }
 
   .cont {
@@ -50,20 +50,22 @@ export const Wrapper = styled.section`
     transition: all 0.4s;
 
     h4,
+    h4 a,
     h6 {
       font-family: "Poppins", sans-serif;
       font-weight: 600;
-    }
-
-    h6 a {
-      display: block;
-      margin-top: var(--px-20);
-      text-transform: uppercase;
-      color: var(--green-500);
       font-size: var(--ft-14);
     }
 
-    h4 {
+    h6 {
+      margin-top: var(--px-20);
+      text-transform: uppercase;
+      color: var(--green-500);
+    }
+
+    h4,
+    h4 a {
+      display: block;
       color: var(--white);
     }
   }
