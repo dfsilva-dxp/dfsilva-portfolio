@@ -4,21 +4,19 @@ type SchoolingItemProps = {
   universityGraduate: string;
   course: string;
   school: string;
-  state: string;
 };
 
 const SchoolingItem = ({
   universityGraduate,
   course,
-  school,
-  state
+  school
 }: SchoolingItemProps) => {
   return (
     <S.Wrapper>
       <h3>{universityGraduate}</h3>
       <h4>{course}</h4>
       <p>
-        <strong>{school}</strong> - {state}
+        <strong>{school}</strong>
       </p>
     </S.Wrapper>
   );
