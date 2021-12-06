@@ -28,10 +28,10 @@ const SwiperSlideWorks = () => {
             />
 
             <S.Cont>
-              <h6 data-swiper-parallax="-200">
-                <a href="#0">art & illustration</a>
-              </h6>
-              <h4 data-swiper-parallax="-200">Ler mais...</h4>
+              <h6 data-swiper-parallax="-200">art & illustration</h6>
+              <h4 data-swiper-parallax="-200">
+                <a href="#0">Ler mais...</a>
+              </h4>
             </S.Cont>
           </SwiperSlide>
 
@@ -59,10 +59,10 @@ const SwiperSlideWorks = () => {
             />
 
             <S.Cont>
-              <h6 data-swiper-parallax="-200">
-                <a href="#0">art & illustration</a>
-              </h6>
-              <h4 data-swiper-parallax="-200">Ler mais...</h4>
+              <h6 data-swiper-parallax="-200">art & illustration</h6>
+              <h4 data-swiper-parallax="-200">
+                <a href="#0">Ler mais...</a>
+              </h4>
             </S.Cont>
           </SwiperSlide>
         </Swiper>

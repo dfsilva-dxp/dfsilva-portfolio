@@ -46,7 +46,7 @@ export const ItemBgImage = styled.div<ItemBgImageProps>`
 
   &.bg-img {
     background-image: url(${({ backgroundSm }) => backgroundSm});
-    background-size: cover;
+    background-size: 110%;
     background-position: center center;
     background-repeat: no-repeat;
 
