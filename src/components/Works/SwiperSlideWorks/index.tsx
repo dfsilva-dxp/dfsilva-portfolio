@@ -20,50 +20,50 @@ const SwiperSlideWorks = () => {
           }}
         >
           <SwiperSlide>
-            <div
+            <S.ItemBgImage
               className="item-img bg-img"
-              data-background="/img/bg-work-1.jpg"
-              style={{
-                backgroundImage: "url('/img/bg-work-1.jpg')"
-              }}
-            ></div>
-            <div className="cont">
+              backgroundLg="/img/bg-570x480.jpg"
+              backgroundMd="/img/bg-410x480.jpg"
+              backgroundSm="/img/bg-310x480.jpg"
+            />
+
+            <S.Cont>
               <h6 data-swiper-parallax="-200">
                 <a href="#0">art & illustration</a>
               </h6>
               <h4 data-swiper-parallax="-200">Ler mais...</h4>
-            </div>
+            </S.Cont>
           </SwiperSlide>
 
           <SwiperSlide>
-            <div
+            <S.ItemBgImage
               className="item-img bg-img"
-              style={{
-                backgroundImage: "url('/img/bg-work-1.jpg')"
-              }}
-              data-background="/img/bg-work-1.jpg"
-            ></div>
-            <div className="cont">
+              backgroundLg="/img/bg-570x480.jpg"
+              backgroundMd="/img/bg-410x480.jpg"
+              backgroundSm="/img/bg-310x480.jpg"
+            />
+
+            <S.Cont>
               <h6 data-swiper-parallax="-200">art & illustration</h6>
               <h4 data-swiper-parallax="-200">
                 <a href="#0">Ler mais...</a>
               </h4>
-            </div>
+            </S.Cont>
           </SwiperSlide>
           <SwiperSlide>
-            <div
+            <S.ItemBgImage
               className="item-img bg-img"
-              data-background="/img/bg-work-1.jpg"
-              style={{
-                backgroundImage: "url('/img/bg-work-1.jpg')"
-              }}
-            ></div>
-            <div className="cont">
+              backgroundLg="/img/bg-570x480.jpg"
+              backgroundMd="/img/bg-410x480.jpg"
+              backgroundSm="/img/bg-310x480.jpg"
+            />
+
+            <S.Cont>
               <h6 data-swiper-parallax="-200">
                 <a href="#0">art & illustration</a>
               </h6>
               <h4 data-swiper-parallax="-200">Ler mais...</h4>
-            </div>
+            </S.Cont>
           </SwiperSlide>
         </Swiper>
         <NavigationButtons />
