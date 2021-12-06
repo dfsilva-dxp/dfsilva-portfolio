@@ -10,12 +10,12 @@ export const params = {
   breakpoints: {
     320: {
       centeredSlides: false,
-      slidesPerView: 1.1,
+      slidesPerView: 1.2,
       spaceBetween: 0
     },
     640: {
       centeredSlides: false,
-      slidesPerView: 1.1,
+      slidesPerView: 1.2,
       spaceBetween: 0
     },
     767: {
