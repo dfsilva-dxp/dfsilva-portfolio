@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Parallax, Navigation } from "swiper";
 SwiperCore.use([Parallax, Navigation]);
 
+import NavigationButtons from "../Navigation/index";
+
 import { params } from "utils/swiperParams";
 
 import * as S from "./styles";
@@ -64,12 +66,7 @@ const SwiperSlideWorks = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <div className="cursor-pointer swiper-button-next swiper-nav-ctrl simp-next">
-          <span className="simple-btn right next">Next</span>
-        </div>
-        <div className="cursor-pointer swiper-button-prev swiper-nav-ctrl simp-prev">
-          <span className="simple-btn prev">Prev</span>
-        </div>
+        <NavigationButtons />
       </div>
     </S.Wrapper>
   );
