@@ -9,7 +9,7 @@ export const params = {
   observeParents: true,
   breakpoints: {
     320: {
-      centeredSlides: false,
+      centeredSlides: true,
       slidesPerView: 1.2,
       spaceBetween: 0
     },
