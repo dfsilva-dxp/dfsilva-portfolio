@@ -28,10 +28,12 @@ const SwiperSlideWorks = () => {
       <div className="swiper-container">
         <Swiper
           {...params}
-          modules={[Navigation, Parallax]}
-          navigation
+          navigation={{
+            prevEl: ".prev",
+            nextEl: ".next"
+          }}
           onSlideChange={() => console.log("slide change")}
-          onBeforeInit={onBeforeInit}
+          onInit={onBeforeInit}
         >
           <SwiperSlide>
             <div
@@ -75,12 +77,12 @@ const SwiperSlideWorks = () => {
           </SwiperSlide>
         </Swiper>
         <div className="cursor-pointer swiper-button-next swiper-nav-ctrl simp-next">
-          <span ref={navigationPrevRef} className="simple-btn right">
+          <span ref={navigationPrevRef} className="simple-btn right next">
             Next
           </span>
         </div>
         <div className="cursor-pointer swiper-button-prev swiper-nav-ctrl simp-prev">
-          <span ref={navigationNextRef} className="simple-btn">
+          <span ref={navigationNextRef} className="simple-btn prev">
             Prev
           </span>
         </div>
