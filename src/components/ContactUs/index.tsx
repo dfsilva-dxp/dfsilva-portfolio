@@ -34,7 +34,6 @@ const ContactUsWrapper = () => {
                 <li>
                   <a
                     href="https://github.com/daniel-silva-dxp"
-                    target="_blank"
                     rel="noreferrer"
                   >
                     <RiGithubLine />
@@ -43,7 +42,6 @@ const ContactUsWrapper = () => {
                 <li>
                   <a
                     href="https://www.instagram.com/daniel.dxp/"
-                    target="_blank"
                     rel="noreferrer"
                   >
                     <RiInstagramLine />
@@ -52,18 +50,13 @@ const ContactUsWrapper = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/in/daniel-silva-dxp/"
-                    target="_blank"
                     rel="noreferrer"
                   >
                     <RiLinkedinBoxLine />
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://wa.me/qr/6MXVTWEZ3CNKK1"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a href="https://wa.me/qr/6MXVTWEZ3CNKK1" rel="noreferrer">
                     <RiWhatsappLine />
                   </a>
                 </li>
