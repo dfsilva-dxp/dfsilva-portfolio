@@ -5,6 +5,7 @@ import Header from "components/Header";
 import ExperienceWrapper from "components/Experiences/";
 import EducationWrapper from "components/Education/";
 import WorksWrapper from "components/Works";
+import ContactUsWrapper from "components/ContactUs";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ExperienceWrapper />
       <EducationWrapper />
       <WorksWrapper />
+      <ContactUsWrapper />
     </Layout>
   );
 }
