@@ -9,8 +9,8 @@ import { params } from "utils/swiperParams";
 import * as S from "./styles";
 
 const SwiperSlideWorks = () => {
-  const navigationPrevRef = useRef<HTMLSpanElement>(null);
-  const navigationNextRef = useRef<HTMLSpanElement>(null);
+  const navigationPrevRef = useRef<HTMLElement>(null);
+  const navigationNextRef = useRef<HTMLElement>(null);
 
   const onBeforeInit = (Swiper: SwiperCore): void => {
     if (navigationPrevRef.current && navigationNextRef.current) {
@@ -32,7 +32,7 @@ const SwiperSlideWorks = () => {
             nextEl: navigationNextRef.current
           }}
           onSlideChange={() => console.log("slide change")}
-          onInit={onBeforeInit}
+          onBeforeInit={onBeforeInit}
         >
           <SwiperSlide>
             <div
