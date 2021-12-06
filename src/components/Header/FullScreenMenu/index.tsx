@@ -10,7 +10,7 @@ const FullScreenMenu = ({ isActive }: FullScreenMenuProps) => {
     <S.FullScreenNav className={!isActive ? "" : "active"}>
       <div className="bg1" />
       <div className="bg2" />
-      <div className="content">
+      <div className="wrap">
         <ul className="custom-font">
           <li>
             <a href="#home" className="link">
