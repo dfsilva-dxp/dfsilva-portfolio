@@ -9,11 +9,13 @@ export const params = {
   observeParents: true,
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      centeredSlides: false,
+      slidesPerView: 1.1,
       spaceBetween: 0
     },
     640: {
-      slidesPerView: 1,
+      centeredSlides: false,
+      slidesPerView: 1.1,
       spaceBetween: 0
     },
     767: {

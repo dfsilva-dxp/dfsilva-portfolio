@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
 
   .swiper-slide {
     text-align: center;
-    padding: 0px 15px;
+    padding: 0px var(--px-10);
     display: flex;
     flex-direction: column;
 
