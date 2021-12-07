@@ -34,6 +34,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       ...portfolio
-    }
+    },
+    revalidate: 60 * 60 // 1 hours
   };
 };
