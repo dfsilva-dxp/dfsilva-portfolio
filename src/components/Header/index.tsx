@@ -11,8 +11,14 @@ import FullScreenMenu from "components/Header/FullScreenMenu";
 
 import * as S from "./styles";
 import NavLinks from "components/Header/NavLinks";
+import { LogoProps } from "types/api";
+import Logo from "./Logo";
 
-const Header = () => {
+type Props = {
+  logo: LogoProps;
+};
+
+const Header = ({ logo }: Props) => {
   const [isActive, setIsActive] = useState(false);
   const [scroll, setScroll] = useState(0);
 
@@ -50,10 +56,7 @@ const Header = () => {
     <>
       <S.Header ref={headingRef}>
         <div className="container">
-          <S.Logo>
-            daniel
-            <span>silva</span>
-          </S.Logo>
+          <Logo {...logo} />
           <NavLinks className="desktop-view" />
           <BurgerButton
             className="mobile-view"
