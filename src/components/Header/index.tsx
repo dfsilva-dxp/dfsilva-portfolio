@@ -6,13 +6,14 @@ import {
   useState
 } from "react";
 
+import { LogoProps } from "types/api";
+
 import BurgerButton from "components/Header/BurgerButton";
 import FullScreenMenu from "components/Header/FullScreenMenu";
+import NavLinks from "components/Header/NavLinks";
+import Logo from "./Logo";
 
 import * as S from "./styles";
-import NavLinks from "components/Header/NavLinks";
-import { LogoProps } from "types/api";
-import Logo from "./Logo";
 
 type Props = {
   logo: LogoProps;
