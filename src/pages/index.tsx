@@ -14,12 +14,12 @@ import EducationWrapper from "components/Education/";
 import WorksWrapper from "components/Works";
 import ContactUsWrapper from "components/ContactUs";
 
-export default function Home({ logo }: PortfolioProps) {
+export default function Home({ logo, banner }: PortfolioProps) {
   return (
     <Layout>
       <Header logo={logo} />
       <Tags />
-      <Banner />
+      <Banner banner={banner} />
       <ExperienceWrapper />
       <EducationWrapper />
       <WorksWrapper />

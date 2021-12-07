@@ -1,15 +1,21 @@
+import { BannerProps } from "types/api";
+
 import * as S from "./styles";
 
-const Banner = () => {
+type Props = {
+  banner: BannerProps;
+};
+
+const Banner = ({ banner }: Props) => {
   return (
     <S.Banner>
       <div className="container">
         <S.Display>
           <S.Into>
-            <strong>Font-End Developer</strong>
-            <h1>Desenvolver se tornou um hobby favorito...</h1>
-            <p>...e eu amo o que faço!</p>
-            <a href="#contact">Vamos Conversar!</a>
+            <strong>{banner.title}</strong>
+            <h1>{banner.description}</h1>
+            <p>{banner.short_description}</p>
+            <a href={banner.button.url}>{banner.button.label}</a>
           </S.Into>
         </S.Display>
       </div>
