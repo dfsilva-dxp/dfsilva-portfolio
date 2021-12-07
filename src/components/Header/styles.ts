@@ -36,21 +36,3 @@ export const Header = styled.header`
     }
   }
 `;
-
-export const Logo = styled.h4`
-  font-family: "Poppins", sans-serif;
-  font-size: var(--ft-24);
-
-  &::before {
-    content: "_";
-  }
-
-  span {
-    font-weight: 400;
-    color: var(--green-500);
-
-    &::after {
-      content: ".";
-    }
-  }
-`;
