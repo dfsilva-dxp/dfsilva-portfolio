@@ -1,10 +1,27 @@
 const GET_PORTFOLIO = /* GraphQL */ `
-  query GET_PORTFOLIO {
-    portfolio {
-      logo {
-        alternativeText
+  fragment logo on Portfolio {
+    logo {
+      alternativeText
+      url
+    }
+  }
+
+  fragment banner on Portfolio {
+    banner {
+      title
+      description
+      short_description
+      button {
+        label
         url
       }
+    }
+  }
+
+  query GET_PORTFOLIO {
+    portfolio {
+      ...logo
+      ...banner
     }
   }
 `;
