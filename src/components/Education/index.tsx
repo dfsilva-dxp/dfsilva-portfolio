@@ -26,7 +26,6 @@ const EducationWrapper = () => {
                   universityGraduate={item.universityGraduate}
                   course={item.course}
                   school={item.school}
-                  state={item.state}
                 />
               ))}
             </S.Schooling>
