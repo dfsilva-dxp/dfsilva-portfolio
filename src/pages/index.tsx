@@ -23,7 +23,6 @@ export default function Home({
   contactUs
 }: PortfolioProps) {
   const { works } = worksSection;
-  console.log(contactUs);
 
   return (
     <Layout>
@@ -40,7 +39,6 @@ export default function Home({
 
 export const getStaticProps: GetStaticProps = async () => {
   const { portfolio } = await cliente.request(GET_PORTFOLIO);
-  console.log(portfolio);
 
   return {
     props: {

@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react";
+
 import * as S from "./styles";
 
 interface BurgerButtonProps extends HTMLAttributes<HTMLButtonElement> {

@@ -155,6 +155,7 @@ const GlobalStyles = createGlobalStyle`
       max-width: 1640px;
     }
   }
+
   h1.title-section {
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -166,18 +167,11 @@ const GlobalStyles = createGlobalStyle`
       line-height: 5.5rem;
     }
   }
-  p.paragraph-section {
-    line-height: var(--px-32);
-    margin-bottom: var(--px-40);
 
-    @media (min-width: 576px) {
-      width: 54ch;
-      word-wrap: break-word;
-    }
-  }
   .custom-font {
     font-family: "Barlow Condensed", sans-serif;
   }
+
   .simple-btn {
     position: relative;
     padding: 7px;
@@ -187,6 +181,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 13px;
     font-weight: 300;
   }
+
   .simple-btn:after {
     content: "";
     width: 45%;
@@ -196,10 +191,12 @@ const GlobalStyles = createGlobalStyle`
     left: 0;
     top: 0;
   }
+
   .simple-btn.right:after {
     left: auto;
     right: 0;
   }
+
   .cursor-pointer {
     cursor: pointer
   }
