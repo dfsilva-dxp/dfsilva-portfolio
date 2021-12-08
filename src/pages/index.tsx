@@ -17,15 +17,17 @@ import ContactUsWrapper from "components/ContactUs";
 export default function Home({
   logo,
   banner,
-  experienceSection
+  experienceSection,
+  educationSection
 }: PortfolioProps) {
+  console.log(educationSection);
   return (
     <Layout>
       <Header logo={logo} />
       <Tags />
       <Banner banner={banner} />
       <ExperienceWrapper {...experienceSection} />
-      <EducationWrapper />
+      <EducationWrapper {...educationSection} />
       <WorksWrapper />
       <ContactUsWrapper />
     </Layout>

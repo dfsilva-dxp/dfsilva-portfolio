@@ -40,6 +40,10 @@ export const Wrapper = styled.section`
     line-height: var(--ft-18);
   }
 
+  p {
+    text-transform: uppercase;
+  }
+
   @media (max-width: 767px) {
     &:nth-child(1) {
       grid-column: 1/3;

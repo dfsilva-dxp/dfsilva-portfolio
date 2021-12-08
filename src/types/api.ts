@@ -35,8 +35,48 @@ export type Skills = {
   title: string;
 };
 
+export type EducationSectionProps = {
+  title: string;
+  description: string;
+  schooling: Schooling[];
+  courses: Courses[];
+  languages: Languages[];
+};
+
+export type Schooling = {
+  id: string;
+  type: string;
+  course: string;
+  school: string;
+};
+
+export type Courses = {
+  id: string;
+  title: string;
+  courses: Course[];
+};
+
+export type Course = {
+  id: string;
+  title: string;
+  duration_level: number;
+};
+
+export type Languages = {
+  id: string;
+  title: string;
+  language: Language[];
+};
+
+export type Language = {
+  id: string;
+  title: string;
+  duration_level: string;
+};
+
 export type PortfolioProps = {
   logo: LogoProps;
   banner: BannerProps;
   experienceSection: ExperienceSectionProps;
+  educationSection: EducationSectionProps;
 };

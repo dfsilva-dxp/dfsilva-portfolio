@@ -1,20 +1,15 @@
 import { ReactNode } from "react";
+import { Course, Language } from "types/api";
 
 import * as S from "./styles";
 
-type Course = {
-  id: number;
-  title: string;
-  time?: string;
-};
-
-type CoursesProps = {
+type Props = {
   icon: ReactNode;
   title: string;
-  data: Course[];
+  data: Course[] | Language[];
 };
 
-const Courses = ({ icon, title, data }: CoursesProps) => {
+const Courses = ({ icon, title, data }: Props) => {
   return (
     <S.Wrapper>
       <S.Heading>
@@ -26,7 +21,7 @@ const Courses = ({ icon, title, data }: CoursesProps) => {
           data.map((item) => (
             <div key={item.id} className="row">
               <span>{item.title}</span>
-              <strong>{item.time}</strong>
+              <strong>{item.duration_level}</strong>
             </div>
           ))}
       </>

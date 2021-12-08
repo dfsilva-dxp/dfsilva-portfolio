@@ -1,19 +1,15 @@
 import * as S from "./styles";
 
 type SchoolingItemProps = {
-  universityGraduate: string;
+  type: string;
   course: string;
   school: string;
 };
 
-const SchoolingItem = ({
-  universityGraduate,
-  course,
-  school
-}: SchoolingItemProps) => {
+const SchoolingItem = ({ type, course, school }: SchoolingItemProps) => {
   return (
     <S.Wrapper>
-      <h3>{universityGraduate}</h3>
+      <h3>{type}</h3>
       <h4>{course}</h4>
       <p>
         <strong>{school}</strong>

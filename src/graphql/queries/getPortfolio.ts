@@ -36,11 +36,43 @@ const GET_PORTFOLIO = /* GraphQL */ `
     }
   }
 
+  fragment education on Portfolio {
+    educationSection {
+      title
+      description
+      schooling {
+        id
+        type
+        course
+        school
+      }
+      courses {
+        id
+        title
+        courses {
+          id
+          title
+          duration_level
+        }
+      }
+      languages {
+        id
+        title
+        language {
+          id
+          title
+          duration_level
+        }
+      }
+    }
+  }
+
   query GET_PORTFOLIO {
     portfolio {
       ...logo
       ...banner
       ...experience
+      ...education
     }
   }
 `;

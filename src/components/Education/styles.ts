@@ -23,6 +23,16 @@ export const Display = styled.div`
   @media (min-width: 1366px) {
     grid-template-columns: 500px 1fr;
   }
+
+  div.paragraph-section {
+    line-height: var(--px-32);
+    margin-bottom: var(--px-40);
+
+    @media (min-width: 576px) {
+      width: 54ch;
+      word-wrap: break-word;
+    }
+  }
 `;
 
 export const Schooling = styled.div`
