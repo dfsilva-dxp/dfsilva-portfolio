@@ -14,13 +14,17 @@ import EducationWrapper from "components/Education/";
 import WorksWrapper from "components/Works";
 import ContactUsWrapper from "components/ContactUs";
 
-export default function Home({ logo, banner }: PortfolioProps) {
+export default function Home({
+  logo,
+  banner,
+  experienceSection
+}: PortfolioProps) {
   return (
     <Layout>
       <Header logo={logo} />
       <Tags />
       <Banner banner={banner} />
-      <ExperienceWrapper />
+      <ExperienceWrapper {...experienceSection} />
       <EducationWrapper />
       <WorksWrapper />
       <ContactUsWrapper />
@@ -30,6 +34,7 @@ export default function Home({ logo, banner }: PortfolioProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const { portfolio } = await cliente.request(GET_PORTFOLIO);
+  console.log(portfolio);
 
   return {
     props: {
