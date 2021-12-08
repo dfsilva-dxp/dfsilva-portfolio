@@ -15,7 +15,28 @@ export type BannerProps = {
   button: ButtonProps;
 };
 
+export type ExperienceSectionProps = {
+  title: string;
+  description: string;
+  experiences: ExperienceProps[];
+};
+
+export type ExperienceProps = {
+  id: string;
+  title: string;
+  description: string;
+  company: string;
+  skills: Skills[];
+  date: string;
+};
+
+export type Skills = {
+  id: string;
+  title: string;
+};
+
 export type PortfolioProps = {
   logo: LogoProps;
   banner: BannerProps;
+  experienceSection: ExperienceSectionProps;
 };
