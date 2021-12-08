@@ -1,9 +1,14 @@
+import { ExperienceProps } from "types/api";
+
 import Skills from "components/Experiences/Skill";
-import { experiences } from "utils/data";
 
 import * as S from "./styles";
 
-const ExperiencyInfo = () => {
+type Props = {
+  experiences: ExperienceProps[];
+};
+
+const ExperiencyInfo = ({ experiences }: Props) => {
   experiences;
   return (
     <>
@@ -12,13 +17,13 @@ const ExperiencyInfo = () => {
           <S.Info key={experience.id}>
             <div className="company-info">
               <h4>{experience.title}</h4>
-              <p>{experience.activities}</p>
+              <p>{experience.description}</p>
             </div>
             <div className="skills">
               <h4>{experience.company}</h4>
               <Skills skills={experience.skills} />
             </div>
-            <div className="company-time">{experience.time}</div>
+            <div className="company-time">{experience.date}</div>
           </S.Info>
         ))}
     </>
