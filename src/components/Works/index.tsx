@@ -1,12 +1,18 @@
+import { Work } from "types/api";
+
 import SwiperSlideWorks from "./SwiperSlideWorks";
 
 import * as S from "./styles";
 
-const WorksWrapper = () => {
+type Props = {
+  works: Work[];
+};
+
+const WorksWrapper = ({ works }: Props) => {
   return (
     <S.Wrapper>
       <div className="container">
-        <SwiperSlideWorks />
+        <SwiperSlideWorks works={works} />
       </div>
     </S.Wrapper>
   );

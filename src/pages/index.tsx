@@ -18,9 +18,13 @@ export default function Home({
   logo,
   banner,
   experienceSection,
-  educationSection
+  educationSection,
+  worksSection,
+  contactUs
 }: PortfolioProps) {
-  console.log(educationSection);
+  const { works } = worksSection;
+  console.log(contactUs);
+
   return (
     <Layout>
       <Header logo={logo} />
@@ -28,8 +32,8 @@ export default function Home({
       <Banner banner={banner} />
       <ExperienceWrapper {...experienceSection} />
       <EducationWrapper {...educationSection} />
-      <WorksWrapper />
-      <ContactUsWrapper />
+      <WorksWrapper works={works} />
+      <ContactUsWrapper {...contactUs} />
     </Layout>
   );
 }

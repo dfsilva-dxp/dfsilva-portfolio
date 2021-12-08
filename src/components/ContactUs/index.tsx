@@ -7,27 +7,35 @@ import {
   RiWhatsappLine
 } from "react-icons/ri";
 
+import { ContactUs } from "types/api";
+
 import ContactTypeContent from "./ContactTypeContent";
 
 import * as S from "./styles";
 
-const ContactUsWrapper = () => {
+const ContactUsWrapper = ({ title, contact_type }: ContactUs) => {
   return (
     <S.Wrapper>
       <div className="container">
         <S.Display>
-          <h1 className="title-section">Contatos</h1>
+          <h1 className="title-section">{title}</h1>
           <S.ContactUsContent>
-            <ContactTypeContent
-              icon={<TiMail />}
-              title="E-mail"
-              data={["dfsilva.dxp@gmail.com"]}
-            />
-            <ContactTypeContent
-              icon={<RiPhoneFill />}
-              title="Telefone"
-              data={["(+55) 11 9 5199-1612"]}
-            />
+            {contact_type &&
+              contact_type.map((item) => (
+                <ContactTypeContent
+                  key={item.id}
+                  icon={
+                    item.title.toLocaleLowerCase() === "e-mail" ? (
+                      <TiMail />
+                    ) : (
+                      <RiPhoneFill />
+                    )
+                  }
+                  title={item.title}
+                  data={item.data}
+                />
+              ))}
+
             <S.SocialContent>
               <span className="simple-btn">SIGA-ME NAS REDES SOCIAIS</span>
               <S.SocialIcons>

@@ -1,8 +1,17 @@
 const GET_PORTFOLIO = /* GraphQL */ `
+  fragment imageData on UploadFile {
+    alternativeText
+    url
+  }
+
+  fragment button on ComponentPageButton {
+    label
+    url
+  }
+
   fragment logo on Portfolio {
     logo {
-      alternativeText
-      url
+      ...imageData
     }
   }
 
@@ -12,8 +21,7 @@ const GET_PORTFOLIO = /* GraphQL */ `
       description
       short_description
       button {
-        label
-        url
+        ...button
       }
     }
   }
@@ -67,12 +75,47 @@ const GET_PORTFOLIO = /* GraphQL */ `
     }
   }
 
+  fragment works on Portfolio {
+    worksSection {
+      works {
+        id
+        title
+        button {
+          label
+          url
+        }
+        wide_img {
+          ...imageData
+        }
+        average_img {
+          ...imageData
+        }
+        small_img {
+          ...imageData
+        }
+      }
+    }
+  }
+
+  fragment contactUs on Portfolio {
+    contactUs {
+      title
+      contact_type {
+        id
+        title
+        data
+      }
+    }
+  }
+
   query GET_PORTFOLIO {
     portfolio {
       ...logo
       ...banner
       ...experience
       ...education
+      ...works
+      ...contactUs
     }
   }
 `;

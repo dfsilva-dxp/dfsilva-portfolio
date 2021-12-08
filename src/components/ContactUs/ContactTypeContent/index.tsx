@@ -5,7 +5,7 @@ import * as S from "./styles";
 type ContactUsWrapperProps = {
   icon: ReactNode;
   title: string;
-  data: string[];
+  data: string;
 };
 
 const ContactTypeContent = ({ icon, title, data }: ContactUsWrapperProps) => {
@@ -15,14 +15,9 @@ const ContactTypeContent = ({ icon, title, data }: ContactUsWrapperProps) => {
         {icon}
         <h4>{title}</h4>
       </S.Heading>
-      <>
-        {data &&
-          data.map((item) => (
-            <div key={item} className="row">
-              <span>{item}</span>
-            </div>
-          ))}
-      </>
+      <div className="row">
+        <span>{data}</span>
+      </div>
     </S.Wrapper>
   );
 };

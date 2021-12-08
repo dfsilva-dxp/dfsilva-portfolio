@@ -1,12 +1,14 @@
+export type ImageData = {
+  alternativeText: string;
+  url: string;
+};
+
 export type ButtonProps = {
   label: string;
   url: string;
 };
 
-export type LogoProps = {
-  alternativeText: string;
-  url: string;
-};
+export type LogoProps = ImageData;
 
 export type BannerProps = {
   title: string;
@@ -74,9 +76,35 @@ export type Language = {
   duration_level: string;
 };
 
+export type Work = {
+  id: string;
+  title: string;
+  button: ButtonProps;
+  wide_img: ImageData;
+  average_img: ImageData;
+  small_img: ImageData;
+};
+
+export type WorksSection = {
+  works: Work[];
+};
+
+export type ContactType = {
+  id: string;
+  title: string;
+  data: string;
+};
+
+export type ContactUs = {
+  title: string;
+  contact_type: ContactType[];
+};
+
 export type PortfolioProps = {
   logo: LogoProps;
   banner: BannerProps;
   experienceSection: ExperienceSectionProps;
   educationSection: EducationSectionProps;
+  worksSection: WorksSection;
+  contactUs: ContactUs;
 };
