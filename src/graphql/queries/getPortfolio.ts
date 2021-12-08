@@ -18,10 +18,29 @@ const GET_PORTFOLIO = /* GraphQL */ `
     }
   }
 
+  fragment experience on Portfolio {
+    experienceSection {
+      title
+      description
+      experiences {
+        id
+        title
+        description
+        company
+        skills {
+          id
+          title
+        }
+        date
+      }
+    }
+  }
+
   query GET_PORTFOLIO {
     portfolio {
       ...logo
       ...banner
+      ...experience
     }
   }
 `;
