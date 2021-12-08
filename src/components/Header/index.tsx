@@ -1,10 +1,4 @@
-import {
-  useCallback,
-  useEffect,
-  useLayoutEffect,
-  useRef,
-  useState
-} from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { LogoProps } from "types/api";
 
@@ -39,7 +33,7 @@ const Header = ({ logo }: Props) => {
     }
   }, [scroll]);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateScroll = () => {
       setScroll(window.scrollY);
     };
