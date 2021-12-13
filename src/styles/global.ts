@@ -1,27 +1,22 @@
 import { createGlobalStyle } from "styled-components";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
 
 const GlobalStyles = createGlobalStyle`
 :root {
     /* COLORS */
     --white: #fff;
-    --gray-50: #f7f8fa;
-    --gray-100: #e6e8eb;
-    --gray-200: #E0E0E0;
-    --gray-500: #808080;
-    --gray-700: #494d4b;
-    --gray-800: #2D2E32;
-    --gray-900: #25262A;
-    --gray-950: #141414;
+    --gray-50: #F2F3F5;
+    --gray-400: #808DAD;
+    --gray-800: #494D4B;
 
-    --green-500: #6EF3A5;
+    --blue-800: #0E1630;
 
-    --orange-500: #FC5950;
+    --green-500: #00FF99;
 
-    --purple-500: #A839FF;
+    --purple-500: #7F64EE;
 
     /* FONTS */
     --ft-8: 0.5rem;
@@ -38,8 +33,6 @@ const GlobalStyles = createGlobalStyle`
     --ft-48: 3rem;
     --ft-54: 3.375rem;
     --ft-72: 4.5rem;
-
-
     /* BOX-SIZE */
     --px-4: 0.25rem;
     --px-8: 0.5rem;
@@ -54,7 +47,6 @@ const GlobalStyles = createGlobalStyle`
     --px-64: 4rem;
     --px-80: 5rem;
   }
-
   * {
     margin: 0;
     padding: 0;
@@ -72,73 +64,60 @@ const GlobalStyles = createGlobalStyle`
       font-size: 87.5%;
     }
   }
-
   body {
-    background: var(--gray-800);
-    font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--white);
+    background: var(--white);
+    font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--gray-800);
+    font-size: var(--ft-15);
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 500;
     overflow-x: hidden;
   }
-
   input,
   textarea,
   button,
   label {
-    font: 400 var(--ft-15)/var(--ft-15) "Poppins", sans-serif;
+    font: 400 var(--ft-15)/var(--ft-15) "Quicksand", sans-serif;
     outline: 0;
   }
-
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: 'Playfair Display', serif;
     font-weight: 700;
   }
-
   ol,
   ul {
     list-style: none;
   }
-
   span {
     display: inline-block;
   }
-
   a {
     text-decoration: none;
     color: inherit;
   }
-
   strong {
     font-weight: 700;
-    color: var(--green-500)
+    color: var(--purple-500)
   }
-
   p, a {
-    font-size: var(--ft-15);
     font-weight: 500;
   }
-
   button {
     cursor: pointer;
   }
-
   [disabled] {
     opacity: 0.6;
     cursor: not-allowed;
   }
-
   /* CLASSES GERAIS */
   .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--px-16);
-
     @media (min-width: 576px) {
       max-width: 540px;
     }
@@ -155,52 +134,9 @@ const GlobalStyles = createGlobalStyle`
       max-width: 1640px;
     }
   }
-
-  h1.title-section {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    word-wrap: break-word;
-
-    @media (min-width: 768px) {
-      width: 4.5ch;
-      font-size: 5.5rem;
-      line-height: 5.5rem;
-    }
-  }
-
-  .custom-font {
-    font-family: "Barlow Condensed", sans-serif;
-  }
-
-  .simple-btn {
-    position: relative;
-    padding: 7px;
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 13px;
-    font-weight: 300;
-  }
-
-  .simple-btn:after {
-    content: "";
-    width: 45%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .simple-btn.right:after {
-    left: auto;
-    right: 0;
-  }
-
   .cursor-pointer {
     cursor: pointer
   }
-
   ::-webkit-scrollbar {
     width: 7px !important;
   }

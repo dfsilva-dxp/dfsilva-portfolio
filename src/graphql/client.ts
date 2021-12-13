@@ -1,5 +1,0 @@
-import { GraphQLClient } from "graphql-request";
-
-const cliente = new GraphQLClient(process.env.GRAPHQL_HOST);
-
-export default cliente;

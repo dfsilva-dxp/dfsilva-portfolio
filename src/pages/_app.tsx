@@ -1,9 +1,9 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
 
-import GlobalStyles from "styles/global";
+import GlobalStyles from "../styles/global";
 
-function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -11,21 +11,12 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         <title>Daniel Silva &bull; Front-end Developer</title>
-        <link rel="manifest" href="/manifest.json" />
-        <link
-          rel="shortcut icon"
-          href="./img/icon-512.png"
-          type="image/x-icon"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="./img/icon-512.png"
-          type="image/x-icon"
-        />
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="./favicon.png" type="image/x-icon" />
         <link rel="manifest" href="/manifest.json" />
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=La+Belle+Aurore&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@200;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=La+Belle+Aurore&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -35,4 +26,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default MyApp;
