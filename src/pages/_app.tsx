@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="Desenvolvedor Front-End e UI Design"
+          content="Especialista em desenvolvimento Front-End e UI Design"
         />
 
         <meta property="og:type" content="website" />
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:description"
-          content="Desenvolvedor Front-End e UI Design"
+          content="Especialista em desenvolvimento Front-End e UI Design"
         />
         <meta
           property="og:image"
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="twitter:description"
-          content="Desenvolvedor Front-End e UI Design"
+          content="Especialista em desenvolvimento Front-End e UI Design"
         />
         <meta
           property="twitter:image"
