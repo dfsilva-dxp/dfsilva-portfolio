@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.nav`
   height: var(--px-80);
+  flex: 1;
 
   ul {
     display: flex;

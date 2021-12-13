@@ -1,10 +1,13 @@
+import { HTMLAttributes } from "react";
 import { RiPhoneFill } from "react-icons/ri";
 
 import * as S from "./styles";
 
-function Navlinks() {
+type NavLinksProps = HTMLAttributes<HTMLUListElement>;
+
+function Navlinks({ ...props }) {
   return (
-    <S.Wrapper>
+    <S.Wrapper {...props}>
       <ul>
         <li>
           <a href="#home">Home</a>
