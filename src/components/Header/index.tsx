@@ -5,7 +5,7 @@ import Navlinks from "../Navlinks";
 import BurguerButton from "../BurguerButton";
 
 import * as S from "./styles";
-import FullScreenMenu from "../FullscreenMenu";
+import FullScreenMenu from "../FullScreenMenu";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);

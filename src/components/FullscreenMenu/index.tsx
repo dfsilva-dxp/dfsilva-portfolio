@@ -1,4 +1,6 @@
+import FullScreenNavLinks from "../FullScreenNavLinks";
 import SocialContent from "../SocialContent";
+
 import * as S from "./styles";
 
 type FullScreenMenuProps = {
@@ -7,51 +9,17 @@ type FullScreenMenuProps = {
 
 const FullScreenMenu = ({ isActive }: FullScreenMenuProps) => {
   return (
-    <S.FullScreenNav
-      className={!isActive ? "" : "active"}
-      transitionDelay={1.1}
-    >
+    <S.FullScreenNav className={!isActive ? "" : "active"}>
       <div className="bg1" />
       <div className="bg2" />
 
-      <div className="wrap">
+      <S.ContentNav className="wrap">
         <div className="container">
           <div className="grid" />
-          <ul className="custom-font">
-            <li>
-              <a href="#home" className="link">
-                <span>00.</span>
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#experiency" className="link">
-                <span>01.</span>
-                <span>Experiências</span>
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="link">
-                <span>02.</span>
-                <span>Formação</span>
-              </a>
-            </li>
-            <li>
-              <a href="#project" className="link">
-                <span>03.</span>
-                <span>Projetos</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="link">
-                <span>04.</span>
-                <span>Contato</span>
-              </a>
-            </li>
-          </ul>
+          <FullScreenNavLinks />
           <SocialContent />
         </div>
-      </div>
+      </S.ContentNav>
     </S.FullScreenNav>
   );
 };

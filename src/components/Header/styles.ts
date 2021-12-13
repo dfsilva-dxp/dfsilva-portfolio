@@ -24,11 +24,11 @@ export const Header = styled.header`
 
   @media (min-width: 992px) {
     .mobile-view {
-      display: flex;
+      display: none;
     }
 
     .desktop-view {
-      display: none;
+      display: block;
     }
   }
 `;

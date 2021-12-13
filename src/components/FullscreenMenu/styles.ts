@@ -24,76 +24,12 @@ export const FullScreenNav = styled.div<Props>`
   }
 
   .bg1 {
-    background: rgba(127, 100, 238, 0.6);
+    background: rgba(127, 100, 238, 1);
   }
 
   .bg2 {
     background: var(--white);
     transition-delay: 0s;
-  }
-
-  .wrap {
-    position: relative;
-    border-top: 1px solid var(--gray-50);
-    border-bottom: 1px solid var(--gray-50);
-    width: 100vw;
-    height: calc(100vh - 10rem);
-    margin-top: 5rem;
-    transform: translateX(100vw);
-    transition: all 0.7s ease;
-
-    & > .container {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-      gap: var(--px-20);
-    }
-
-    ul {
-      opacity: 0;
-      color: var(--gray-400);
-      transition: all 0.8s ease 0s;
-
-      ul li {
-        position: relative;
-        padding: 0 15px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        transition: all 0.2s ease 0.3s;
-      }
-
-      li a {
-        position: relative;
-        font-weight: 400;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        opacity: 0.6;
-        transition: all 0.2s ease 0.2s;
-      }
-
-      li a:hover {
-        opacity: 1;
-        color: var(--purple-500);
-      }
-
-      li a span {
-        font-size: var(--ft-16);
-        font-weight: 400;
-        margin-right: 5px;
-      }
-
-      li a span:first-child {
-        color: var(--green-500);
-        font-weight: 700;
-      }
-      li a span:last-child {
-        font-size: var(--ft-54);
-      }
-    }
   }
 
   &.active {
@@ -105,22 +41,41 @@ export const FullScreenNav = styled.div<Props>`
       transition-delay: 0.4s;
 
       ul {
-        transition-delay: 0.5s;
+        opacity: 1;
+        transition-delay: 0.4s;
       }
     }
   }
+
   &.active .bg1,
   &.active .bg2 {
     left: 0;
   }
+
   &.active .bg1 {
     transition-delay: 0s;
   }
+
   &.active .bg2 {
     transition-delay: 0.3s;
   }
-  &.active ul {
-    opacity: 1;
-    transition-delay: 1s;
+`;
+
+export const ContentNav = styled.nav`
+  border-top: 1px solid var(--gray-50);
+  border-bottom: 1px solid var(--gray-50);
+  width: 100vw;
+  height: calc(100vh - 10rem);
+  margin-top: 5rem;
+  transform: translateX(100vw);
+  transition: all 0.6s ease;
+
+  & > .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: var(--px-20);
   }
 `;
