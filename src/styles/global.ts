@@ -117,6 +117,7 @@ const GlobalStyles = createGlobalStyle`
   }
   /* CLASSES GERAIS */
   .container {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--px-16);
@@ -134,6 +135,23 @@ const GlobalStyles = createGlobalStyle`
     }
     @media (min-width: 1920px) {
       max-width: 1640px;
+    }
+
+    &  > .grid {
+      position: absolute;
+      border-left: 1px solid var(--gray-50);
+      border-right: 1px solid var(--gray-50);
+      left: var(--px-16);
+      right: var(--px-16);
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      z-index: -1;
+
+      &::before {
+        content: "";
+        border-right: 1px solid var(--gray-50);
+      }
     }
   }
   .cursor-pointer {

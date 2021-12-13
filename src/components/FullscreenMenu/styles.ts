@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const FullScreenNav = styled.div`
+interface Props {
+  transitionDelay?: number;
+}
+
+export const FullScreenNav = styled.div<Props>`
   z-index: 5;
   position: fixed;
   top: 0;
@@ -14,10 +18,13 @@ export const FullScreenNav = styled.div`
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: rgba(127, 100, 238, 0.6);
     top: 0;
     left: 100%;
     transition: all 0.7s ease 0.3s;
+  }
+
+  .bg1 {
+    background: rgba(127, 100, 238, 0.6);
   }
 
   .bg2 {
@@ -35,28 +42,16 @@ export const FullScreenNav = styled.div`
     transform: translateX(100vw);
     transition: all 0.7s ease;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: var(--px-20);
-
     & > .container {
-      border-left: 1px solid var(--gray-50);
-      border-right: 1px solid var(--gray-50);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      &::before {
-        content: "";
-        border-right: 1px solid var(--gray-50);
-      }
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      gap: var(--px-20);
     }
 
-    & > ul {
+    ul {
       opacity: 0;
       color: var(--gray-400);
       transition: all 0.8s ease 0s;
@@ -107,7 +102,7 @@ export const FullScreenNav = styled.div`
 
     .wrap {
       transform: translateX(0);
-      transition-delay: 0.3s;
+      transition-delay: 0.4s;
 
       ul {
         transition-delay: 0.5s;
