@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 // import "swiper/css/scrollbar";
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
 :root {
     /* COLORS */
     --white: #fff;
