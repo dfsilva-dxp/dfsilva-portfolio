@@ -3,7 +3,7 @@ import { useCallback, useState } from "react";
 import Logo from "../Logo";
 import Navlinks from "../Navlinks";
 import BurguerButton from "../BurguerButton";
-import FullScreenMenu from "../FullScreenMenu";
+// import FullScreenMenu from "../FullScreenMenu";
 
 import * as S from "./styles";
 
@@ -25,7 +25,7 @@ function Header() {
           />
         </div>
       </S.Header>
-      <FullScreenMenu isActive={isActive} />
+      {/* <FullScreenMenu isActive={isActive} /> */}
     </>
   );
 }
