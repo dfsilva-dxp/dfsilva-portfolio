@@ -6,6 +6,7 @@ import BurguerButton from "../BurguerButton";
 // import FullScreenMenu from "../FullScreenMenu";
 
 import * as S from "./styles";
+import FullScreenMenu from "../FullScreenMenu";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -25,6 +26,7 @@ function Header() {
           />
         </div>
       </S.Header>
+      <FullScreenMenu isActive={isActive} />
       {/* <FullScreenMenu isActive={isActive} /> */}
     </>
   );
