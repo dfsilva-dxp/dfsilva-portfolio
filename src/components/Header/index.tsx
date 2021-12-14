@@ -3,9 +3,9 @@ import { useCallback, useState } from "react";
 import Logo from "../Logo";
 import Navlinks from "../Navlinks";
 import BurguerButton from "../BurguerButton";
+import FullScreenMenu from "../FullScreenMenu";
 
 import * as S from "./styles";
-import FullScreenMenu from "../FullScreenMenu";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
