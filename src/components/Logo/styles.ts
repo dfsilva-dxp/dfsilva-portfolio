@@ -4,12 +4,4 @@ export const Logo = styled.h1`
   height: var(--px-42);
   display: grid;
   place-items: center;
-
-  .mobile-view {
-    display: none;
-  }
-
-  .desktop-view {
-    display: none;
-  }
 `;
