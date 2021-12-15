@@ -65,7 +65,7 @@ const GlobalStyles = createGlobalStyle`
     }
     /* @media (max-width: 768px) {
       font-size: 87.5%;
-    } */
+    }  */
   }
   body {
     background: var(--white);

@@ -35,6 +35,10 @@ export const Wrapper = styled.nav`
           font-size: 18px;
         }
       }
+
+      @media (min-width: 1081px) and (max-width: 1199px) {
+        padding: 0 var(--px-16);
+      }
     }
   }
 `;
