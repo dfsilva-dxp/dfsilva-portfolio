@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 // import "swiper/css";
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
@@ -31,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
     --ft-22: 1.375rem;
     --ft-24: 1.5rem;
     --ft-36: 2.25rem;
+    --ft-40: 2.5rem;
     --ft-48: 3rem;
     --ft-54: 3.375rem;
     --ft-72: 4.5rem;
@@ -68,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     background: var(--white);
-    font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--gray-800);
     font-size: var(--ft-15);
     line-height: 1.5;
@@ -154,6 +156,17 @@ const GlobalStyles = createGlobalStyle`
       }
     }
   }
+
+  .align-items-center {
+    display: grid;
+    place-items: center;
+  }
+
+  .border-top-bottom {
+    border-top: 1px solid var(--gray-50);
+    border-bottom: 1px solid var(--gray-50);
+  }
+  
   .cursor-pointer {
     cursor: pointer
   }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Banner from "../components/Banner";
 
 import Layout from "../components/Layout";
 
@@ -9,10 +10,7 @@ export default function Home() {
         <title>Daniel Silva &bull; Front-end Developer</title>
       </Head>
       <Layout>
-        <div className="div container">
-          <div className="grid" />
-          Content
-        </div>
+        <Banner />
       </Layout>
     </>
   );
