@@ -159,16 +159,16 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer
   }
   ::-webkit-scrollbar {
-    width: 7px !important;
+    width: 10px !important;
   }
   ::-webkit-scrollbar-track {
     background: var(--gray-50) !important;
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--gray-900) !important;
+    background: var(--purple-500) !important;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--gray-800) !important;
+    background: var(--purple-500) !important;
   }
 `;
 
