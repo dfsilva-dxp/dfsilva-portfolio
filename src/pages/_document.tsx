@@ -96,6 +96,12 @@ export default class MyDocument extends Document {
             name="keywords"
             content="front-end, desenvolvedor front-end, front end, daniel front end, daniel silva, daniel, dev, dev front-end, desenvolver sites, programação de sites, portfolio"
           />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+            crossOrigin="tue"
+          />
         </Head>
         <body>
           <Main />
