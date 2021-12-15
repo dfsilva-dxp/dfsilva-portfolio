@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+  position: fixed;
   background-color: var(--white);
   width: 100%;
   height: var(--px-72);

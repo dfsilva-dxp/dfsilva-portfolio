@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-interface Props {
-  transitionDelay?: number;
-}
-
-export const FullScreenNav = styled.div<Props>`
+export const FullScreenNav = styled.div`
   z-index: 5;
   position: fixed;
   top: 0;
@@ -14,7 +10,7 @@ export const FullScreenNav = styled.div<Props>`
 
   .bg1,
   .bg2 {
-    margin-top: var(--px-80);
+    margin-top: var(--px-72);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -65,8 +61,8 @@ export const ContentNav = styled.nav`
   border-top: 1px solid var(--gray-50);
   border-bottom: 1px solid var(--gray-50);
   width: 100vw;
-  height: calc(100vh - 10rem);
-  margin-top: 5rem;
+  height: calc(100vh - 9rem);
+  margin-top: 4.4375rem;
   transform: translateX(100vw);
   transition: all 0.6s ease;
 
