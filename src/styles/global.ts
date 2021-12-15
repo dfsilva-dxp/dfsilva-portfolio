@@ -170,6 +170,11 @@ const GlobalStyles = createGlobalStyle`
   .cursor-pointer {
     cursor: pointer
   }
+
+  .custom-font {
+    font-family: "DNSV Bold";
+  }
+
   ::-webkit-scrollbar {
     width: 10px !important;
   }
