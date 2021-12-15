@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
     --px-40: 2.5rem;
     --px-48: 3rem;
     --px-64: 4rem;
+    --px-72: 4.5rem;
     --px-80: 5rem;
   }
   * {

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
-  height: var(--px-80);
+  height: var(--px-72);
   flex: 1;
 
   ul {
     display: flex;
-    line-height: var(--px-80);
+    line-height: var(--px-72);
     padding-left: 7.5rem;
 
     li {

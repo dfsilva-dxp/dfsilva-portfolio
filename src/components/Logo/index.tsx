@@ -2,10 +2,6 @@ import Image from "next/image";
 
 import * as S from "./styles";
 
-const myLoader = ({ src, _, quality }) => {
-  return `${src}?&q=${quality || 75}`;
-};
-
 function Logo() {
   return (
     <S.Logo>
@@ -13,8 +9,8 @@ function Logo() {
         src="/images/logo.svg"
         alt="Logo Daniel Silva - Front-End Developer"
         title="Logo Daniel Silva - Front-End Developer"
-        width={46}
-        height={46}
+        width={130}
+        height={37}
         objectFit="cover"
       />
     </S.Logo>

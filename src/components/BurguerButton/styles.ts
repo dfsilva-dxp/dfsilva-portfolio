@@ -2,20 +2,10 @@ import styled from "styled-components";
 
 export const NavContent = styled.div`
   width: var(--px-40);
-  height: var(--px-80);
+  height: var(--px-72);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .mobile-view {
-    display: flex;
-  }
-
-  /* @media (min-width: 992px) {
-    .mobile-view {
-      display: none;
-    }
-  } */
 `;
 
 export const BtnNavContainer = styled.button`
