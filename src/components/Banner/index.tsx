@@ -20,10 +20,30 @@ function Banner() {
                 <p>E eu amo o que faço!</p>
               </div>
               <div className="display-right">
+                <S.SquareChessItems>
+                  <Image
+                    src="/images/square-chess.svg"
+                    alt="Scroll Down"
+                    title="Scroll Down"
+                    width={48}
+                    height={48}
+                    objectFit="cover"
+                  />
+                </S.SquareChessItems>
+                <S.SquareChessItems>
+                  <Image
+                    src="/images/square-chess.svg"
+                    alt="Scroll Down"
+                    title="Scroll Down"
+                    width={48}
+                    height={48}
+                    objectFit="cover"
+                  />
+                </S.SquareChessItems>
                 <span className="custom-font">DNSV</span>
                 <span className="custom-font">DNSV</span>
                 <span className="custom-font">DNSV</span>
-                <span className="custom-font">DNSV</span>
+                <span className="custom-font text-stroke">DNSV</span>
               </div>
             </S.Text>
           </S.Display>

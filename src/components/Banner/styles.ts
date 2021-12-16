@@ -45,10 +45,11 @@ export const Text = styled.div`
       font-weight: 700;
 
       @media (min-width: 992px) {
-        font-size: var(--ft-48);
+        font-size: var(--ft-54);
       }
       @media (min-width: 1200px) {
-        font-size: var(--ft-54);
+        font-size: var(--ft-72);
+        line-height: 0.9;
       }
     }
 
@@ -62,7 +63,7 @@ export const Text = styled.div`
     }
   }
   .display-right {
-    border: 1px solid #0f0;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -71,13 +72,26 @@ export const Text = styled.div`
     justify-content: center;
 
     span {
-      font-size: var(--ft-48);
+      font-size: var(--ft-54);
       line-height: 0.75;
+      color: var(--purple-500);
+
+      &:nth-child(4) {
+        opacity: 0.6;
+      }
+      &:nth-child(5) {
+        opacity: 0.3;
+      }
+      &.text-stroke {
+        opacity: 0.2;
+        -webkit-text-stroke: 1px var(--purple-500);
+        color: transparent;
+      }
     }
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
   }
 `;
 
@@ -85,4 +99,16 @@ export const Scroll = styled.picture`
   height: 118px;
   display: grid;
   place-items: center;
+`;
+
+export const SquareChessItems = styled.picture`
+  position: absolute;
+
+  &:nth-child(1) {
+    left: 0;
+  }
+  &:nth-child(2) {
+    right: 0;
+    top: var(--px-40);
+  }
 `;
