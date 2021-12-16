@@ -13,7 +13,11 @@ export const Presentation = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: var(--px-80);
+  gap: var(--px-20);
+
+  @media (min-width: 1440px) {
+    gap: var(--px-80);
+  }
 `;
 
 export const Display = styled.div`
