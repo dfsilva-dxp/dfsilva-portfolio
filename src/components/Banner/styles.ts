@@ -72,7 +72,7 @@ export const Text = styled.div`
     justify-content: center;
 
     span {
-      font-size: var(--ft-54);
+      font-size: var(--ft-72);
       line-height: 0.75;
       color: var(--purple-500);
 
