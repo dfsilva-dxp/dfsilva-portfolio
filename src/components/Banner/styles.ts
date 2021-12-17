@@ -14,10 +14,6 @@ export const Presentation = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--px-20);
-
-  @media (min-width: 1440px) {
-    gap: var(--px-80);
-  }
 `;
 
 export const Display = styled.div`
@@ -95,7 +91,7 @@ export const Text = styled.div`
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto 1fr;
   }
 `;
 
