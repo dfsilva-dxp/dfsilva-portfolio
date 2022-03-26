@@ -4,9 +4,12 @@ import * as Square from "components/DottedSquare/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    padding-top: ${theme.spacings.xlarge};
-    padding-bottom: ${theme.spacings.xlarge};
+    padding-top: ${theme.spacings.xxlarge};
+    padding-bottom: ${theme.spacings.xxlarge};
     position: relative;
+    display: grid;
+    place-items: center;
+    gap: ${theme.spacings.xlarge};
   `}
 `;
 
