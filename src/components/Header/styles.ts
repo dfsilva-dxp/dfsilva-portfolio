@@ -21,6 +21,7 @@ export const Display = styled.div`
   }
 
   @media (min-width: 991px) {
+    width: 100%;
     grid-template-columns: 2fr 1fr;
   }
 `;
