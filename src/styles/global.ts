@@ -52,7 +52,9 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
       background: ${theme.colors.black};
-      font: ${theme.font.weight.normal} inherit ${theme.font.family}, sans-serif;
+      font: ${theme.font.weight.normal} ${theme.font.sizes.small}
+          ${theme.font.family},
+        sans-serif;
       color: ${theme.colors.white};
       line-height: 1.5;
       overflow: hidden;
