@@ -1,15 +1,15 @@
 import { AppProps } from "next/app";
+import { ThemeProvider } from "styled-components";
 
-import GlobalStyles from "../styles/global";
-import "/public/fonts/my-font.scss";
+import { GlobalStyles, theme } from "styles";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 
-export default MyApp;
+export default App;

@@ -1,31 +1,53 @@
 {
-  "name": "next-portfolio",
+  "name": "dfsilva-dev",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint src --max-warnings=0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "yarn lint --fix",
+      "yarn test --findRelatedTests --bail"
+    ]
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.17",
-    "next": "12.0.7",
+    "next": "12.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/preset-typescript": "^7.16.0",
-    "@types/node": "^16.11.12",
-    "@types/react": "^17.0.37",
-    "babel-plugin-styled-components": "^2.0.2",
-    "eslint": "8.4.1",
-    "eslint-config-next": "12.0.7",
-    "sass": "^1.45.0",
-    "typescript": "^4.5.2"
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/styled-components": "^5.1.24",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "babel-plugin-styled-components": "^2.0.6",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
