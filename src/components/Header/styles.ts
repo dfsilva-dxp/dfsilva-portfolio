@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 
 import * as Square from "components/DottedSquare/styles";
+import * as Grid from "components/Grid/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -11,18 +12,16 @@ export const Container = styled.div`
     place-items: center;
     gap: ${theme.spacings.xlarge};
   `}
-`;
 
-export const Display = styled.div`
-  display: grid;
+  ${Grid.Display} {
+    @media (min-width: 768px) {
+      grid-template-columns: 2fr 1fr;
+    }
 
-  @media (min-width: 768px) {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  @media (min-width: 991px) {
-    width: 100%;
-    grid-template-columns: 2fr 1fr;
+    @media (min-width: 991px) {
+      width: 100%;
+      grid-template-columns: 2fr 1fr;
+    }
   }
 `;
 

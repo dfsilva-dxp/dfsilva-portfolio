@@ -4,7 +4,6 @@ import DottedSquare from "components/DottedSquare";
 
 import {
   DescriptionProps,
-  DisplayProps,
   HeaderProps,
   LeftProps,
   ShortDescriptionProps,
@@ -14,7 +13,6 @@ import {
 import {
   Container,
   Description,
-  Display,
   Left,
   Right,
   ShortDescription,
@@ -24,10 +22,6 @@ import {
 export default function Header({ children }: HeaderProps) {
   return <Container>{children}</Container>;
 }
-
-Header.Display = function HeaderDisplay({ children }: DisplayProps) {
-  return <Display>{children}</Display>;
-};
 
 Header.Left = function HeaderLeft({ children }: LeftProps) {
   return <Left>{children}</Left>;

@@ -4,8 +4,6 @@ export type HeaderProps = {
   children: ReactNode;
 };
 
-export type DisplayProps = HeaderProps;
-
 export type LeftProps = HeaderProps;
 
 export type TitleProps = HeaderProps;
