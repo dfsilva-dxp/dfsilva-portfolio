@@ -1,3 +1,9 @@
+import { Header } from "container";
+
 export default function Home() {
-  return <h1>Portfolio</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
