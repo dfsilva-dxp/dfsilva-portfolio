@@ -29,7 +29,8 @@ export default {
     panel: "#15131C",
     gray400: "#808DAD",
     gray800: "#212226",
-    gray900: "#212226"
+    gray900: "#212226",
+    gradient: "linear-gradient(to right, #80ffea 0%, #8aff80 100%)"
   },
   spacings: {
     xxsmall: "0.8rem",
