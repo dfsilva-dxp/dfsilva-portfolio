@@ -1,4 +1,4 @@
-import { Base, Header } from "components";
+import { Base, Grid, Header } from "components";
 
 export default function HeaderContainer() {
   return (
@@ -7,7 +7,7 @@ export default function HeaderContainer() {
         <Base.Grid />
 
         <Header>
-          <Header.Display>
+          <Grid>
             <Header.Left>
               <Header.Title>Olá, eu sou um Artista de Pixel!</Header.Title>
 
@@ -23,7 +23,7 @@ export default function HeaderContainer() {
             </Header.Left>
 
             <Header.Right />
-          </Header.Display>
+          </Grid>
 
           <Header.Arrow />
         </Header>
