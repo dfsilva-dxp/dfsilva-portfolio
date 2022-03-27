@@ -8,8 +8,6 @@ export const Container = styled.div`
     padding-top: ${theme.spacings.xxlarge};
     padding-bottom: ${theme.spacings.xxlarge};
     position: relative;
-    display: grid;
-    gap: ${theme.spacings.xlarge};
   `}
 
   ${Grid.Display} {
