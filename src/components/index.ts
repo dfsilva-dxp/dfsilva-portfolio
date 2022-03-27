@@ -4,3 +4,4 @@ export { default as DottedSquare } from "./DottedSquare";
 export { default as Grid } from "./Grid";
 export { default as Header } from "./Header";
 export { default as PanelSkill } from "./PanelSkill";
+export { default as Square } from "./Square";
