@@ -13,6 +13,7 @@ export const Container = styled.div`
       ${Grid.Display} {
         grid-template-columns: 1fr;
         gap: ${theme.spacings.xlarge};
+        place-items: center;
       }
 
       ${Left} {
@@ -24,9 +25,9 @@ export const Container = styled.div`
 
 export const Left = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     display: grid;
-    align-items: center;
-    justify-items: center;
+    place-items: center;
 
     gap: ${theme.spacings.small};
     max-width: 45rem;
