@@ -5,7 +5,6 @@ export const Content = styled.section`
     width: 100%;
     height: fit-content;
     border-top: 1px solid ${theme.colors.panel};
-    border-bottom: 1px solid ${theme.colors.panel};
   `}
 `;
 
