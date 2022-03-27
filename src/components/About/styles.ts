@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 
-import * as PanelSkill from "components/PanelSkill/styles";
+import * as Header from "components/Header/styles";
 import * as Grid from "components/Grid/styles";
+import * as PanelSkill from "components/PanelSkill/styles";
+import * as Square from "components/Square/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -28,9 +30,15 @@ export const Left = styled.div`
     width: 100%;
     display: grid;
     place-items: center;
+    position: relative;
 
     gap: ${theme.spacings.small};
     max-width: 45rem;
+
+    ${Square.Container} {
+      bottom: -4rem;
+      right: 0;
+    }
 
     @media (min-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
@@ -50,24 +58,7 @@ export const Right = styled.div`
   `}
 `;
 
-export const Title = styled.h1`
-  ${({ theme }) => css`
-    background: #80ffea;
-    background: ${theme.colors.gradient};
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 100%;
-    background-clip: text;
-    font-size: ${theme.font.sizes.medium};
-
-    &::before {
-      content: "---";
-      font-weight: ${theme.font.weight.bold};
-      letter-spacing: -3px;
-      margin-right: 0.8rem;
-    }
-  `}
-`;
+export const Title = styled(Header.Title)``;
 
 export const Subtitle = styled.h4`
   ${({ theme }) => css`
@@ -76,9 +67,8 @@ export const Subtitle = styled.h4`
   `}
 `;
 
-export const Description = styled.p`
-  ${({ theme }) => css`
-    color: ${theme.colors.gray400};
-    font-weight: ${theme.font.weight.medium};
-  `}
+export const Description = styled(Header.ShortDescription)``;
+
+export const Picture = styled.div`
+  width: fit-content;
 `;

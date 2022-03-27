@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   AboutProps,
   DescriptionProps,
@@ -7,7 +8,15 @@ import {
   TitleProps
 } from "./type";
 
-import { Container, Description, Left, Right, Subtitle, Title } from "./styles";
+import {
+  Container,
+  Description,
+  Left,
+  Picture,
+  Right,
+  Subtitle,
+  Title
+} from "./styles";
 
 export default function About({ children }: AboutProps) {
   return <Container>{children}</Container>;
@@ -31,4 +40,18 @@ About.Subtitle = function AboutSubtitle({ children }: SubtitleProps) {
 
 About.Description = function AboutDescription({ children }: DescriptionProps) {
   return <Description>{children}</Description>;
+};
+
+About.Bars = function AboutBars() {
+  return (
+    <Picture>
+      <Image
+        src="/img/bars.svg"
+        title="Bars"
+        alt="Bars"
+        width={65}
+        height={12}
+      />
+    </Picture>
+  );
 };
