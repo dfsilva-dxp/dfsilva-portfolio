@@ -22,7 +22,7 @@ const panelModifiers = {
 
 export const Panel = styled.div<Pick<PanelSkillProps, "brPosition">>`
   ${({ theme, brPosition }) => css`
-    background: rgba(18, 16, 23, 0.7);
+    background: rgba(128, 141, 173, 0.3);
     width: 100%;
 
     padding: ${theme.spacings.small};
