@@ -14,6 +14,7 @@ import {
   Container,
   Description,
   Left,
+  Picture,
   Right,
   ShortDescription,
   Title
@@ -54,12 +55,14 @@ Header.ShortDescription = function HeaderShortDescription({
 
 Header.Arrow = function HeaderArrow() {
   return (
-    <Image
-      src="/img/arrow.svg"
-      title="Scroll down"
-      alt="Scroll down"
-      width={20}
-      height={12}
-    />
+    <Picture>
+      <Image
+        src="/img/arrow.svg"
+        title="Scroll down"
+        alt="Scroll down"
+        width={20}
+        height={12}
+      />
+    </Picture>
   );
 };

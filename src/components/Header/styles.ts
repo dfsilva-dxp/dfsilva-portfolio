@@ -9,7 +9,6 @@ export const Container = styled.div`
     padding-bottom: ${theme.spacings.xxlarge};
     position: relative;
     display: grid;
-    place-items: center;
     gap: ${theme.spacings.xlarge};
   `}
 
@@ -84,4 +83,14 @@ export const ShortDescription = styled.p`
     color: ${theme.colors.gray400};
     font-weight: ${theme.font.weight.medium};
   `}
+`;
+
+export const Picture = styled.div`
+  display: grid;
+  place-items: center;
+
+  img {
+    width: fit-content;
+    height: fit-content;
+  }
 `;
