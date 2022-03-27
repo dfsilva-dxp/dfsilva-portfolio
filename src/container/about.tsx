@@ -1,4 +1,11 @@
-import { About, Base, Grid, PanelSkill } from "components";
+import {
+  About,
+  Base,
+  DottedSquare,
+  Grid,
+  PanelSkill,
+  Square
+} from "components";
 
 export default function AboutContainer() {
   return (
@@ -23,7 +30,11 @@ export default function AboutContainer() {
                 imageURL="/img/wireframe.svg"
                 brPosition="bl"
               />
+
+              <Square />
+              <DottedSquare />
             </About.Left>
+
             <About.Right>
               <About.Title>Sobre mim.</About.Title>
 
@@ -36,6 +47,8 @@ export default function AboutContainer() {
                 com Reactjs, Nextjs e UI Design. Sua próxima ideia já tem um
                 Dev!
               </About.Description>
+
+              <About.Bars />
             </About.Right>
           </Grid>
         </About>
