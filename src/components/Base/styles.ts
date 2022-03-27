@@ -47,6 +47,7 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     z-index: -1;
+    opacity: 0.5;
 
     &::before {
       content: "";

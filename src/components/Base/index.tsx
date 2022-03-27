@@ -1,6 +1,6 @@
 import { BaseProps, ContainerProps } from "./types";
 
-import { Container, Content, Grid } from "./tyles";
+import { Container, Content, Grid } from "./styles";
 
 export default function Base({ children }: BaseProps) {
   return <Content>{children}</Content>;
