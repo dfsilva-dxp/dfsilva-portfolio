@@ -28,6 +28,7 @@ export default {
     secondary: "#7F64EE",
     panel: "#15131C",
     gray400: "#808DAD",
+    gray700: "#494D4B",
     gray800: "#212226",
     gray900: "#212226",
     gradient: "linear-gradient(to right, #80ffea 0%, #8aff80 100%)"
