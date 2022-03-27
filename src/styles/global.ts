@@ -89,13 +89,14 @@ const GlobalStyles = createGlobalStyle`
     }
 
     ::-webkit-scrollbar {
-      width: 8px !important;
+      width: 7px !important;
     }
     ::-webkit-scrollbar-track {
       background: ${theme.colors.panel} !important;
     }
     ::-webkit-scrollbar-thumb {
       background: ${theme.colors.gradient} !important;
+      border-radius: 50px !important;
     }
     ::-webkit-scrollbar-thumb:hover {
       background: ${theme.colors.gradient} !important;
