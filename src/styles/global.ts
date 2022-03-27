@@ -57,7 +57,7 @@ const GlobalStyles = createGlobalStyle`
         sans-serif;
       color: ${theme.colors.white};
       line-height: 1.5;
-      overflow: hidden;
+      overflow-x: hidden;
     }
     input,
     textarea,
@@ -86,6 +86,19 @@ const GlobalStyles = createGlobalStyle`
     [disabled],
     [readonly] {
       cursor: not-allowed;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px !important;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${theme.colors.panel} !important;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${theme.colors.gradient} !important;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${theme.colors.gradient} !important;
     }
   `}
 `;
