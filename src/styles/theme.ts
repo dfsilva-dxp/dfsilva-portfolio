@@ -26,7 +26,7 @@ export default {
     black: "#08070B",
     primary: "#00FF99",
     secondary: "#7F64EE",
-    panel: "#121017",
+    panel: "#212024",
     gray400: "#808DAD",
     gray700: "#494D4B",
     gray800: "#212226",
