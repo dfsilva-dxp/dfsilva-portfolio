@@ -13,9 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "background_color": "#06092B",
+  "background_color": "#08070B",
   "description": "Artista de pixel, mas pode me chamar de Front-End Developer.",
   "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#06092B"
+  "theme_color": "#08070B"
 }
