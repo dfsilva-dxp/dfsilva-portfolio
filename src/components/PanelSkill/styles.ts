@@ -27,7 +27,7 @@ export const Panel = styled.div<Pick<PanelSkillProps, "brPosition">>`
 
     padding: ${theme.spacings.small};
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 7.2rem 1fr;
     align-items: center;
     gap: ${theme.spacings.xxsmall};
     font-weight: ${theme.font.weight.medium};

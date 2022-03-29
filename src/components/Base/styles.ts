@@ -4,7 +4,7 @@ export const Content = styled.section`
   ${({ theme }) => css`
     width: 100%;
     height: fit-content;
-    border-top: 1px solid ${theme.colors.panel};
+    border-top: 1px solid ${theme.colors.panelAlpha};
   `}
 `;
 
@@ -38,8 +38,8 @@ export const Container = styled.div`
 export const Grid = styled.div`
   ${({ theme }) => css`
     position: absolute;
-    border-left: 1px solid ${theme.colors.panel};
-    border-right: 1px solid ${theme.colors.panel};
+    border-left: 1px solid ${theme.colors.panelAlpha};
+    border-right: 1px solid ${theme.colors.panelAlpha};
     left: ${theme.spacings.small};
     right: ${theme.spacings.small};
     height: 100%;
@@ -49,7 +49,7 @@ export const Grid = styled.div`
 
     &::before {
       content: "";
-      border-right: 1px solid ${theme.colors.panel};
+      border-right: 1px solid ${theme.colors.panelAlpha};
     }
   `}
 `;

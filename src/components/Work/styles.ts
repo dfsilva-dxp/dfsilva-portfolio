@@ -29,8 +29,8 @@ export const Title = styled.h4`
     &::after {
       content: "";
       position: absolute;
-      background: url(/img/points-right.svg) no-repeat center center;
-      top: 0;
+      background: url(/img/points-right.svg) center center/contain no-repeat;
+      top: ${theme.spacings.xxsmall};
       right: 0;
       width: 8px;
       height: 8px;
@@ -43,6 +43,7 @@ export const Description = styled.p`
     font-size: ${theme.font.sizes.xsmall};
     color: ${theme.colors.gray400};
     font-weight: ${theme.font.weight.medium};
+    line-height: 2.8rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
