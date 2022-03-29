@@ -24,6 +24,17 @@ export const Hovered = styled(motion.span)`
 export const Title = styled.h4`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(/img/points-right.svg) no-repeat center center;
+      top: 0;
+      right: 0;
+      width: 8px;
+      height: 8px;
+    }
   `}
 `;
 
