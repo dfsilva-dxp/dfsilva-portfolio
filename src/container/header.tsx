@@ -1,4 +1,5 @@
 import { Base, Grid, Header } from "components";
+import { FallowMe } from "container";
 
 export default function HeaderContainer() {
   return (
@@ -26,6 +27,7 @@ export default function HeaderContainer() {
           </Grid>
 
           <Header.Arrow />
+          <FallowMe />
         </Header>
       </Base.Container>
     </Base>
