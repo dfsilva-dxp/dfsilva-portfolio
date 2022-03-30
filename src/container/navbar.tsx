@@ -1,11 +1,14 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 
-import { Base, BurguerButton, Logo, Menu, Navbar, NavLinks } from "components";
+import { useMenu } from "hooks/useMenu";
+
+import { Base, Burguer, Logo, Menu, Navbar, NavLinks } from "components";
 
 export default function NavbarContainer() {
-  const [isActive, setIsActive] = useState(false);
   const [hovered, setHovered] = useState("");
+
+  const { isActive, toggleMenu } = useMenu();
 
   const menuItems = [
     {
@@ -26,10 +29,6 @@ export default function NavbarContainer() {
     }
   ];
 
-  const handleClick = useCallback(() => {
-    setIsActive(!isActive);
-  }, [isActive]);
-
   return (
     <>
       <Navbar>
@@ -37,7 +36,11 @@ export default function NavbarContainer() {
           <Navbar.Grid>
             <Logo />
 
-            <BurguerButton handleMenu={handleClick} />
+            <Burguer>
+              <Burguer.Button isActive={isActive} onClick={toggleMenu}>
+                <Burguer.Content />
+              </Burguer.Button>
+            </Burguer>
           </Navbar.Grid>
         </Base.Container>
       </Navbar>
@@ -67,7 +70,7 @@ export default function NavbarContainer() {
                       index={item.index}
                       handleHoverStart={() => setHovered(item.name)}
                       handleHoverEnd={() => setHovered("")}
-                      handleClick={handleClick}
+                      handleClick={toggleMenu}
                     >
                       {isHovered && <NavLinks.Hovered />}
 
