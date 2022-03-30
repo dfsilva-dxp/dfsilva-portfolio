@@ -9,19 +9,13 @@ export const Container = styled.div`
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: ${theme.spacings.xlarge};
-    position: absolute;
-    bottom: 0;
-
-    @media (min-width: 576px) {
-      right: 0;
-    }
   `}
 `;
 
 export const Message = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.xxsmall};
-    font-weight: ${theme.font.weight.bold};
+    font-size: ${theme.font.sizes.small};
+    font-weight: ${theme.font.weight.medium};
   `}
 `;
 
@@ -47,6 +41,7 @@ export const Icon = styled(motion.span)`
     position: relative;
     display: grid;
     place-items: center;
+    font-size: ${theme.font.sizes.medium};
 
     &:hover svg {
       color: ${theme.colors.primary};

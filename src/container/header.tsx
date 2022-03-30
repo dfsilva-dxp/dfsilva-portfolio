@@ -21,13 +21,14 @@ export default function HeaderContainer() {
               <Header.ShortDescription>
                 E eu amo o que faço!
               </Header.ShortDescription>
+
+              <FallowMe />
             </Header.Left>
 
             <Header.Right />
           </Grid>
 
           <Header.Arrow />
-          <FallowMe />
         </Header>
       </Base.Container>
     </Base>
