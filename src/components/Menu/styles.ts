@@ -12,9 +12,8 @@ const wrapperModifiers = {
       transition-delay: 0.4s;
 
       ul {
-        border: 1px solid #fff;
         opacity: 1;
-        transition-delay: 0.4s;
+        transition-delay: 1s;
       }
     }
 

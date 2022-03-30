@@ -33,7 +33,7 @@ FallowMe.SocialContainer = function FallowSocialContainer({
 FallowMe.Hovered = function FallowHovered() {
   return (
     <Hovered
-      layoutId="works"
+      layoutId="fallowMe"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

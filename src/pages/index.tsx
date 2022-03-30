@@ -1,12 +1,20 @@
+import { Element } from "react-scroll";
+
 import { About, Experiences, Header, Navbar } from "container";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Element name="Home">
+        <Header />
+      </Element>
+
       <About />
-      <Experiences />
+
+      <Element name="Portfólio">
+        <Experiences />
+      </Element>
     </>
   );
 }
