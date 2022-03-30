@@ -5,7 +5,7 @@ import * as Grid from "components/Grid/styles";
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    padding-top: ${theme.spacings.xxlarge};
+    padding-top: calc(${theme.spacings.xxlarge} * 2);
     padding-bottom: ${theme.spacings.xxlarge};
     position: relative;
     display: grid;

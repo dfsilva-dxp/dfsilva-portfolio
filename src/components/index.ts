@@ -1,10 +1,14 @@
 export { default as About } from "./About";
 export { default as Base } from "./Base";
+export { default as BurguerButton } from "./BurguerButton";
 export { default as DottedSquare } from "./DottedSquare";
 export { default as Experiences } from "./Experiences";
 export { default as FallowMe } from "./FallowMe";
 export { default as Grid } from "./Grid";
 export { default as Header } from "./Header";
+export { default as Logo } from "./Logo";
+export { default as Navbar } from "./Navbar";
+export { default as Menu } from "./Menu";
 export { default as PanelSkill } from "./PanelSkill";
 export { default as Square } from "./Square";
 export { default as Work } from "./Work";
