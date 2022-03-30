@@ -36,7 +36,7 @@ export const Description = styled.p`
     font-size: ${theme.font.sizes.xsmall};
     color: ${theme.colors.gray400};
     font-weight: ${theme.font.weight.medium};
-    line-height: 2.8rem;
+    line-height: 1.5;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -47,9 +47,10 @@ export const Description = styled.p`
 
 export const CustonLink = styled.a`
   ${({ theme }) => css`
+    width: fit-content;
     font-size: ${theme.font.sizes.xsmall};
     font-weight: ${theme.font.weight.medium};
-    text-align: right;
+    justify-self: end;
 
     transition: color ${theme.transition.default};
 
