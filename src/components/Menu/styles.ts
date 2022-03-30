@@ -32,8 +32,11 @@ const wrapperModifiers = {
 export const Wrapper = styled.div<Pick<MenuProps, "isActive">>`
   ${({ theme, isActive }) => css`
     position: fixed;
+    top: 0;
+    width: 0%;
+    height: 100vh;
+    transition-delay: 1.1s;
     z-index: ${theme.layers.menu};
-    inset: 0;
 
     ${isActive && wrapperModifiers.active()}
   `}
