@@ -62,3 +62,5 @@ export const Content = styled.div`
   transform: translateX(100vw);
   transition: all 0.6s ease;
 `;
+
+export const Nav = styled.nav``;
