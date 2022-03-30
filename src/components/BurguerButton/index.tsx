@@ -2,7 +2,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useState } from "react";
 
 import { BurguerButtonProps } from "./types";
-
 import { Burguer } from "./styles";
 
 export default function BurguerButton({ handleMenu }: BurguerButtonProps) {
@@ -43,7 +42,7 @@ export default function BurguerButton({ handleMenu }: BurguerButtonProps) {
 
   return (
     <Burguer onClick={handleClick}>
-      <svg width="24" height="24" viewBox="0 0 24 24">
+      <svg width="34" height="34" viewBox="0 0 24 24">
         <motion.path
           {...pathOneVariants.closed}
           animate={pathOneControls}
