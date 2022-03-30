@@ -1,4 +1,7 @@
 import Link from "next/link";
+
+import { spring } from "utils/spring";
+
 import {
   CustomLinkProps,
   DescriptionProps,
@@ -21,12 +24,6 @@ export default function Work({
 }
 
 Work.Hovered = function WorkHovered() {
-  const spring = {
-    type: "spring",
-    stiffness: 500,
-    damping: 30
-  };
-
   return (
     <Hovered
       layoutId="works"

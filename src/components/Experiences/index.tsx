@@ -1,4 +1,5 @@
 import { AnimateSharedLayout } from "framer-motion";
+
 import {
   ExperiencesProps,
   SubtitleProps,

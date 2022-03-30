@@ -13,15 +13,18 @@ export default function FallowMeContainer() {
   const socialIcons = [
     {
       name: "github",
-      icon: <RiGithubLine />
+      icon: <RiGithubLine />,
+      url: "https://github.com/daniel-silva-dxp"
     },
     {
       name: "instagram",
-      icon: <RiInstagramLine />
+      icon: <RiInstagramLine />,
+      url: "https://www.instagram.com/daniel.dxp/"
     },
     {
       name: "linkedin",
-      icon: <RiLinkedinBoxLine />
+      icon: <RiLinkedinBoxLine />,
+      url: "https://www.linkedin.com/in/daniel-silva-dxp/"
     }
   ];
 
@@ -36,6 +39,7 @@ export default function FallowMeContainer() {
           return (
             <FallowMe.Icon
               key={icon.name}
+              to={icon.url}
               handleHoverStart={() => setHovered(icon.name)}
               handleHoverEnd={() => setHovered("")}
             >

@@ -11,4 +11,5 @@ export type SocialContainerProps = FallowMeProps;
 export type IconProps = FallowMeProps & {
   handleHoverStart: () => void;
   handleHoverEnd: () => void;
+  to: string;
 };

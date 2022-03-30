@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { AnimateSharedLayout } from "framer-motion";
+
+import { spring } from "utils/spring";
 
 import {
   FallowMeProps,
@@ -28,12 +31,6 @@ FallowMe.SocialContainer = function FallowSocialContainer({
 };
 
 FallowMe.Hovered = function FallowHovered() {
-  const spring = {
-    type: "spring",
-    stiffness: 500,
-    damping: 30
-  };
-
   return (
     <Hovered
       layoutId="works"
@@ -48,11 +45,14 @@ FallowMe.Hovered = function FallowHovered() {
 FallowMe.Icon = function FallowIcon({
   children,
   handleHoverStart,
-  handleHoverEnd
+  handleHoverEnd,
+  to
 }: IconProps) {
   return (
     <Icon onMouseEnter={handleHoverStart} onHoverEnd={handleHoverEnd}>
-      {children}
+      <Link href={to}>
+        <a>{children}</a>
+      </Link>
     </Icon>
   );
 };
