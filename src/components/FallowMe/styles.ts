@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
+import * as NavLinks from "components/NavLinks/styles";
+
 export const Container = styled.div`
   ${({ theme }) => css`
     width: fit-content;
@@ -24,24 +26,18 @@ export const SocialContainer = styled(motion.span)`
   grid-template-columns: repeat(3, 1fr);
 `;
 
-export const Hovered = styled(motion.span)`
-  ${({ theme }) => css`
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: ${theme.colors.panel};
-    border-radius: ${theme.border.radius};
-    z-index: -1;
-  `}
-`;
+export const Hovered = styled(NavLinks.Hovered)``;
 
 export const Icon = styled(motion.span)`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
     position: relative;
-    display: grid;
-    place-items: center;
     font-size: ${theme.font.sizes.medium};
+
+    svg {
+      display: grid;
+      place-items: center;
+    }
 
     &:hover svg {
       color: ${theme.colors.primary};

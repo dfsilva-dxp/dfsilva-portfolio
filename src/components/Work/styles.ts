@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
+import * as NavLinks from "components/NavLinks/styles";
+
 export const Container = styled(motion.span)`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall} ${theme.spacings.medium};
@@ -10,16 +12,7 @@ export const Container = styled(motion.span)`
   `}
 `;
 
-export const Hovered = styled(motion.span)`
-  ${({ theme }) => css`
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: ${theme.colors.panel};
-    border-radius: ${theme.border.radius};
-    z-index: -1;
-  `}
-`;
+export const Hovered = styled(NavLinks.Hovered)``;
 
 export const Title = styled.h4`
   ${({ theme }) => css`
