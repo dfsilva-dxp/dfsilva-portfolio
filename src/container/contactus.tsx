@@ -3,6 +3,7 @@ import { RiPhoneLine } from "react-icons/ri";
 import { TiLocationOutline, TiMail } from "react-icons/ti";
 
 import { Base, ContactUs, Grid } from "components";
+import { FallowMe } from "container";
 
 export default function ContacUsContainer() {
   return (
@@ -46,6 +47,8 @@ export default function ContacUsContainer() {
                   </ContactUs.Icon>
                   <ContactUs.Paragraph>+55 11 9 5199 1612</ContactUs.Paragraph>
                 </ContactUs.Group>
+
+                <FallowMe />
               </ContactUs.Address>
             </ContactUs.Left>
 
