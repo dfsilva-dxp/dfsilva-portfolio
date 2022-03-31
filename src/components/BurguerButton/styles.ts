@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
     width: ${theme.spacings.xlarge};
     display: grid;
     place-items: center;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   `}
 `;
 
