@@ -59,6 +59,11 @@ export const DesktopItem = styled(motion.li)`
     align-items: center;
     justify-content: center;
     gap: ${theme.spacings.xxsmall};
+    transition: color ${theme.transition.default};
+
+    &:hover {
+      color: ${theme.colors.primary};
+    }
 
     span {
       font-size: ${theme.font.sizes.small};
