@@ -16,34 +16,41 @@ export default function NavbarContainer() {
   const mobileItems = [
     {
       name: "Home",
-      index: "00."
+      index: "00.",
+      to: "home"
     },
     {
       name: "Portfólio",
-      index: "01."
+      index: "01.",
+      to: "works"
     },
     {
       name: "Vamos Conversar?",
-      index: "02."
+      index: "02.",
+      to: "contact-us"
     }
   ];
 
   const desktopItems = [
     {
       name: "Home",
-      icon: null
+      icon: null,
+      to: "home"
     },
     {
       name: "Portfólio",
-      icon: null
+      icon: null,
+      to: "works"
     },
     {
       name: "Vamos Conversar?",
-      icon: null
+      icon: null,
+      to: "contact-us"
     },
     {
       name: "+55 11 9 5199 1612",
-      icon: <RiPhoneLine />
+      icon: <RiPhoneLine />,
+      to: ""
     }
   ];
 
@@ -67,7 +74,7 @@ export default function NavbarContainer() {
                     const isHovered = hovered === item.name;
                     return (
                       <Link
-                        to={item.name}
+                        to={item.to}
                         key={item.name}
                         {...settings}
                         style={{ fontSize: "1.4rem" }}
@@ -111,7 +118,7 @@ export default function NavbarContainer() {
                 {mobileItems.map((item) => {
                   const isHovered = hovered === item.name;
                   return (
-                    <Link to={item.name} key={item.index} {...settings}>
+                    <Link to={item.to} key={item.index} {...settings}>
                       <NavLinks.MobileItem
                         index={item.index}
                         handleHoverStart={() => setHovered(item.name)}
