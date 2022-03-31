@@ -2,9 +2,22 @@ import { AnimateSharedLayout } from "framer-motion";
 
 import { spring } from "utils/spring";
 
-import { ItemProps, NavLinksProps } from "./types";
+import {
+  DesktopContainerProps,
+  DesktopItemProps,
+  MobileContainerProps,
+  MobileItemProps,
+  NavLinksProps
+} from "./types";
 
-import { Container, Hovered, Item } from "./styles";
+import {
+  Container,
+  DesktopContainer,
+  DesktopItem,
+  Hovered,
+  MobileContainer,
+  MobileItem
+} from "./styles";
 
 export default function NavLinks({ children }: NavLinksProps) {
   return (
@@ -13,6 +26,18 @@ export default function NavLinks({ children }: NavLinksProps) {
     </AnimateSharedLayout>
   );
 }
+
+NavLinks.MobileContainer = function NavLinksMobileContainer({
+  children
+}: MobileContainerProps) {
+  return <MobileContainer>{children}</MobileContainer>;
+};
+
+NavLinks.DesktopContainer = function NavLinksDesktopContainer({
+  children
+}: DesktopContainerProps) {
+  return <DesktopContainer>{children}</DesktopContainer>;
+};
 
 NavLinks.Hovered = function NavLinksHovered() {
   return (
@@ -26,21 +51,38 @@ NavLinks.Hovered = function NavLinksHovered() {
   );
 };
 
-NavLinks.Item = function NavLinksItem({
+NavLinks.MobileItem = function NavLinksMobileItem({
   children,
-  index,
+  index = "",
   handleHoverStart,
   handleHoverEnd,
   handleClick
-}: ItemProps) {
+}: MobileItemProps) {
   return (
-    <Item
+    <MobileItem
       onClick={handleClick}
       onMouseEnter={handleHoverStart}
       onHoverEnd={handleHoverEnd}
     >
       <small>{index}</small>
       {children}
-    </Item>
+    </MobileItem>
+  );
+};
+
+NavLinks.DesktopItem = function NavLinksDesktopItem({
+  children,
+  handleHoverStart,
+  handleHoverEnd,
+  handleClick
+}: DesktopItemProps) {
+  return (
+    <DesktopItem
+      onClick={handleClick}
+      onMouseEnter={handleHoverStart}
+      onHoverEnd={handleHoverEnd}
+    >
+      {children}
+    </DesktopItem>
   );
 };

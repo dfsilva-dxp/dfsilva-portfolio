@@ -38,7 +38,11 @@ export const Wrapper = styled.div<Pick<MenuProps, "isActive">>`
     transition-delay: 1.1s;
     z-index: ${theme.layers.menu};
 
-    ${isActive && wrapperModifiers.active()}
+    ${isActive && wrapperModifiers.active()};
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   `}
 `;
 
@@ -56,7 +60,7 @@ export const Overlay = styled(Background)`
   `}
 `;
 
-export const Content = styled.div`
+export const Content = styled.nav`
   height: 100vh;
   display: grid;
   align-items: center;
@@ -65,4 +69,10 @@ export const Content = styled.div`
   transition: all 0.6s ease;
 `;
 
-export const Nav = styled.nav``;
+export const DesktopWrapper = styled.nav`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;

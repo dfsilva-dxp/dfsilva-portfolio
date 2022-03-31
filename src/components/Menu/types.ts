@@ -6,3 +6,5 @@ export type MenuProps = {
 };
 
 export type ContentProps = Pick<MenuProps, "children">;
+
+export type MenuDesktopProps = Pick<MenuProps, "children">;

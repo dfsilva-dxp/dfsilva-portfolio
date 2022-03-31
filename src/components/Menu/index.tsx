@@ -1,6 +1,12 @@
-import { ContentProps, MenuProps } from "./types";
+import { ContentProps, MenuDesktopProps, MenuProps } from "./types";
 
-import { Background, Content, Nav, Overlay, Wrapper } from "./styles";
+import {
+  Background,
+  Content,
+  DesktopWrapper,
+  Overlay,
+  Wrapper
+} from "./styles";
 
 export default function Menu({ children, isActive = false }: MenuProps) {
   return <Wrapper isActive={isActive}>{children}</Wrapper>;
@@ -18,6 +24,6 @@ Menu.Content = function MenuContent({ children }: ContentProps) {
   return <Content>{children}</Content>;
 };
 
-Menu.Nav = function MenuNav({ children }: ContentProps) {
-  return <Nav>{children}</Nav>;
+Menu.Desktop = function MenuDesktop({ children }: MenuDesktopProps) {
+  return <DesktopWrapper>{children}</DesktopWrapper>;
 };
