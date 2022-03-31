@@ -25,10 +25,6 @@ export default function NavbarContainer() {
     {
       name: "Vamos Conversar?",
       index: "02."
-    },
-    {
-      name: "+55 11 9 5199 1612",
-      index: "03."
     }
   ];
 

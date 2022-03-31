@@ -1,6 +1,7 @@
 export { default as About } from "./About";
 export { default as Base } from "./Base";
 export { default as Burguer } from "./BurguerButton";
+export { default as ContactUs } from "./ContactUs";
 export { default as DottedSquare } from "./DottedSquare";
 export { default as Experiences } from "./Experiences";
 export { default as FallowMe } from "./FallowMe";
