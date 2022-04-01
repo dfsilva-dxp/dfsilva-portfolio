@@ -11,8 +11,8 @@ export type DesktopContainerProps = Pick<NavLinksProps, "children">;
 export type MobileItemProps = {
   children: ReactNode;
   index?: string;
-  handleHoverStart: () => void;
-  handleHoverEnd: () => void;
+  handleHoverStart?: () => void;
+  handleHoverEnd?: () => void;
   handleClick?: () => void;
 };
 

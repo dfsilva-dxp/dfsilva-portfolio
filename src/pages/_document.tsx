@@ -52,7 +52,7 @@ export default class MyDocument extends Document {
 
           <title>Daniel Silva &bull; Front-End Developer</title>
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://dfsilva.dev/" />
+          <meta property="og:url" content="https://dfsilva.dev" />
           <meta
             property="og:title"
             content="Daniel Silva - Desenvolvedor Front-End"

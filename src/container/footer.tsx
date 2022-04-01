@@ -1,14 +1,12 @@
-import { useState } from "react";
+import Link from "next/link";
 import { Link as ReactScrollLink } from "react-scroll";
 import { RiHandHeartLine, RiPhoneLine } from "react-icons/ri";
 
 import { settings } from "utils/react-scroll-settings";
 
 import { Base, Footer, NavLinks } from "components";
-import Link from "next/link";
 
 export default function FooterContainer() {
-  const [hovered, setHovered] = useState("");
   const desktopItems = [
     {
       name: "Home",
@@ -23,17 +21,9 @@ export default function FooterContainer() {
           <Footer.Content>
             <NavLinks.DesktopContainer>
               {desktopItems.map((item) => {
-                const isHovered = hovered === item.name;
                 return (
                   <ReactScrollLink to={item.to} key={item.name} {...settings}>
-                    <NavLinks.DesktopItem
-                      handleHoverStart={() => setHovered(item.name)}
-                      handleHoverEnd={() => setHovered("")}
-                    >
-                      {isHovered && <NavLinks.Hovered />}
-
-                      {item.name}
-                    </NavLinks.DesktopItem>
+                    <NavLinks.DesktopItem>{item.name}</NavLinks.DesktopItem>
                   </ReactScrollLink>
                 );
               })}
