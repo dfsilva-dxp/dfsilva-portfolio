@@ -6,6 +6,7 @@ export const Container = styled.div``;
 export const MobileContainer = styled(motion.ul)`
   ${({ theme }) => css`
     padding: ${theme.spacings.xxsmall};
+    transform: translateX(100vw);
     opacity: 0;
     transition: opacity ${theme.transition.default};
     transition-delay: 1s;
