@@ -13,7 +13,7 @@ export type MobileItemProps = {
   index?: string;
   handleHoverStart: () => void;
   handleHoverEnd: () => void;
-  handleClick: () => void;
+  handleClick?: () => void;
 };
 
 export type DesktopItemProps = Omit<MobileItemProps, "index"> & {

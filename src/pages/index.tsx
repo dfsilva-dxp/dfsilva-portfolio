@@ -18,7 +18,9 @@ export default function Home() {
         <Header />
       </Element>
 
-      <About />
+      <Element name="about">
+        <About />
+      </Element>
 
       <Element name="works">
         <Experiences />

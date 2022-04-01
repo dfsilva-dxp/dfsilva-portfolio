@@ -1,9 +1,9 @@
 import { Link } from "react-scroll";
 import { RiHandHeartLine } from "react-icons/ri";
 
-import { Base, Footer } from "components";
-
 import { settings } from "utils/react-scroll-settings";
+
+import { Base, Footer } from "components";
 
 export default function FooterContainer() {
   return (
