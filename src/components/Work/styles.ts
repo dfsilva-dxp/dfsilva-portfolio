@@ -8,6 +8,7 @@ export const Container = styled(motion.span)`
     padding: ${theme.spacings.xxsmall} ${theme.spacings.medium};
     display: grid;
     gap: ${theme.spacings.xxsmall};
+    grid-template-rows: 2.4rem 11rem auto;
     position: relative;
   `}
 `;
@@ -17,6 +18,7 @@ export const Hovered = styled(NavLinks.Hovered)``;
 export const Title = styled.h4`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.medium};
+    line-height: 1;
     position: relative;
 
     &::after {
@@ -43,27 +45,7 @@ export const Description = styled.p`
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     min-height: 10rem;
-  `}
-`;
-
-export const WrapperTecnologies = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    flex-wrap: wrap;
-    gap: ${theme.spacings.xxsmall};
-    align-items: center;
-    justify-content: start;
-  `}
-`;
-
-export const Tecnology = styled.div`
-  ${({ theme }) => css`
-    color: ${theme.colors.black};
-    font-size: ${theme.font.sizes.xxsmall};
-    font-weight: ${theme.font.weight.bold};
-    background: ${theme.colors.primary};
-    padding: 0.4rem ${theme.spacings.xxsmall};
-    border-radius: ${theme.border.radius};
+    justify-self: start;
   `}
 `;
 

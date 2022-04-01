@@ -30,12 +30,6 @@ export default function ExperiencesContainer() {
 
                   <Work.Description>{work.description}</Work.Description>
 
-                  <Work.WrapperTecnologies>
-                    {work.tecnologies.map((tecnology) => (
-                      <Work.Tecnology tecnology={tecnology} key={tecnology} />
-                    ))}
-                  </Work.WrapperTecnologies>
-
                   <Work.Link to={work.repository_url}>repositório.</Work.Link>
                 </Work>
               );
