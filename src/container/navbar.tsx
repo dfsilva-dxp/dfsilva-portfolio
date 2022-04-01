@@ -105,37 +105,31 @@ export default function NavbarContainer() {
           <Menu.Content>
             <Base.Grid />
 
-            <NavLinks>
-              <NavLinks.MobileContainer>
-                {mobileItems.map((item) => {
-                  const isHovered = hovered === item.name;
-                  return (
-                    <ReactScrollLink
-                      to={item.to}
-                      key={item.index}
-                      {...settings}
+            <NavLinks.MobileContainer>
+              {mobileItems.map((item) => {
+                const isHovered = hovered === item.name;
+                return (
+                  <ReactScrollLink to={item.to} key={item.index} {...settings}>
+                    <NavLinks.MobileItem
+                      index={item.index}
+                      handleHoverStart={() => setHovered(item.name)}
+                      handleHoverEnd={() => setHovered("")}
+                      handleClick={toggleMenu}
                     >
-                      <NavLinks.MobileItem
-                        index={item.index}
-                        handleHoverStart={() => setHovered(item.name)}
-                        handleHoverEnd={() => setHovered("")}
-                        handleClick={toggleMenu}
-                      >
-                        {isHovered && <NavLinks.Hovered />}
+                      {isHovered && <NavLinks.Hovered />}
 
-                        {item.name}
-                      </NavLinks.MobileItem>
-                    </ReactScrollLink>
-                  );
-                })}
-                <Link href="https://contate.me/dfsilva.dev" passHref>
-                  <a target="_blank" rel="noopener">
-                    <RiPhoneLine />
-                    <strong>+55 11 9 5199 1612</strong>
-                  </a>
-                </Link>
-              </NavLinks.MobileContainer>
-            </NavLinks>
+                      {item.name}
+                    </NavLinks.MobileItem>
+                  </ReactScrollLink>
+                );
+              })}
+              <Link href="https://contate.me/dfsilva.dev" passHref>
+                <a target="_blank" rel="noopener">
+                  <RiPhoneLine />
+                  <strong>+55 11 9 5199 1612</strong>
+                </a>
+              </Link>
+            </NavLinks.MobileContainer>
           </Menu.Content>
         </Base.Container>
       </Menu>

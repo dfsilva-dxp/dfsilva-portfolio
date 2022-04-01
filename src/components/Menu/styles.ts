@@ -15,6 +15,7 @@ const wrapperModifiers = {
         opacity: 1;
         transform: translateX(0);
         transition-delay: 1s;
+        display: block;
       }
     }
 
