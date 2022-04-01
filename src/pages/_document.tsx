@@ -59,21 +59,13 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Especialista em desenvolvimento Front-End"
-          />
-
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://dfsilva.dev/" />
-          <meta
-            property="twitter:title"
-            content="Daniel Silva - Desenvolvedor Front-End"
+            content="Artista de pixel, mas pode me chamar de Front-End Developer"
           />
 
           <meta
             name="keywords"
             content="front-end, desenvolvedor front-end, front end, daniel silva front end, dfsilva front end, daniel silva, dfsilva, dev, dev front-end, desenvolver sites, programação de sites, portfolio"
           />
-          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
