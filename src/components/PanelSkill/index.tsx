@@ -11,7 +11,7 @@ export default function PanelSkill({
 }: PanelSkillProps) {
   return (
     <Panel brPosition={brPosition}>
-      <Image src={imageURL} width={72} height={72} />
+      <Image src={imageURL} width={72} height={72} alt={title} title={title} />
       {title}
     </Panel>
   );
