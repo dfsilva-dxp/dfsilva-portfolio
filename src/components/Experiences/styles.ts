@@ -15,7 +15,7 @@ export const Title = styled(Header.Title)``;
 
 export const Subtitle = styled(About.Subtitle)`
   ${({ theme }) => css`
-    margin-top: ${theme.spacings.small};
+    margin-top: ${theme.spacings.xsmall};
   `}
 `;
 
@@ -23,7 +23,6 @@ export const Works = styled(motion.span)`
   ${({ theme }) => css`
     margin-top: ${theme.spacings.xxlarge};
     display: grid;
-    /* gap: ${theme.spacings.small}; */
 
     @media (min-width: 576px) {
       grid-template-columns: repeat(2, 1fr);

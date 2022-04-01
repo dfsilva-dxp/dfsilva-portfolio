@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Left = styled.div`
   ${({ theme }) => css`
     display: grid;
-    gap: ${theme.spacings.xxsmall};
+    gap: ${theme.spacings.xsmall};
   `}
 `;
 
@@ -39,8 +39,8 @@ export const Description = styled(Header.ShortDescription)``;
 export const Address = styled.address`
   ${({ theme }) => css`
     display: grid;
-    gap: ${theme.spacings.xxsmall};
-    padding-top: ${theme.spacings.xlarge};
+    gap: ${theme.spacings.xsmall};
+    margin-top: ${theme.spacings.xxlarge};
     padding-bottom: ${theme.spacings.medium};
   `}
 `;
