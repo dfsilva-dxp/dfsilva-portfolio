@@ -19,7 +19,7 @@ export default function HeaderContainer() {
               </Header.Description>
 
               <Header.ShortDescription>
-                E eu amo o que faço!
+                O importante é que saibam, que eu amo o que faço!
               </Header.ShortDescription>
 
               <FallowMe />

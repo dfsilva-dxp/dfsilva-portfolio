@@ -38,14 +38,18 @@ export default function AboutContainer() {
             <About.Right>
               <About.Title>Sobre mim.</About.Title>
 
-              <About.Subtitle>
-                Olá, meu nome é Daniel Francisco da Silva.
-              </About.Subtitle>
+              <About.Subtitle>Me chamo Daniel Silva.</About.Subtitle>
 
               <About.Description>
-                Sou Front-end developer a 4 anos, apaixonado por desenvolvimento
-                com Reactjs, Nextjs e UI Design. Sua próxima ideia já tem um
-                Dev!
+                Sou formado em <em>Análise e desenvolvimento de sistemas</em>{" "}
+                (2020) e, atualmente curso MBA em{" "}
+                <em>Engenharia de Software</em>. Ambos pela FIAP.
+              </About.Description>
+
+              <About.Description>
+                Front-end developer e artista de pixel a <em>4 anos</em>,
+                apaixonado por desenvolvimento com <em>Reactjs</em>,{" "}
+                <em>Nextjs</em> e <em>UI Design</em>.
               </About.Description>
 
               <About.Bars />

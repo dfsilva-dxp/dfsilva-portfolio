@@ -67,7 +67,13 @@ export const Subtitle = styled.h4`
   `}
 `;
 
-export const Description = styled(Header.ShortDescription)``;
+export const Description = styled(Header.ShortDescription)`
+  ${({ theme }) => css`
+    em {
+      color: ${theme.colors.primary};
+    }
+  `}
+`;
 
 export const Picture = styled.div`
   width: fit-content;
