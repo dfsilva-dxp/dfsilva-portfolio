@@ -5,11 +5,21 @@ import { spring } from "utils/spring";
 import {
   CustomLinkProps,
   DescriptionProps,
+  TecnologyProps,
   TitleProps,
-  WorkProps
+  WorkProps,
+  WrapperTecnologiesProps
 } from "./types";
 
-import { Container, CustonLink, Description, Hovered, Title } from "./styles";
+import {
+  Container,
+  CustonLink,
+  Description,
+  Hovered,
+  Tecnology,
+  Title,
+  WrapperTecnologies
+} from "./styles";
 
 export default function Work({
   children,
@@ -41,6 +51,16 @@ Work.Title = function WorkTitle({ children }: TitleProps) {
 
 Work.Description = function WorkDescription({ children }: DescriptionProps) {
   return <Description>{children}</Description>;
+};
+
+Work.WrapperTecnologies = function WorkWrapperTecnologies({
+  children
+}: WrapperTecnologiesProps) {
+  return <WrapperTecnologies>{children}</WrapperTecnologies>;
+};
+
+Work.Tecnology = function WorkTecnology({ tecnology }: TecnologyProps) {
+  return <Tecnology>{tecnology}</Tecnology>;
 };
 
 Work.Link = function WorkLink({ children, to }: CustomLinkProps) {

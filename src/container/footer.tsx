@@ -11,6 +11,10 @@ export default function FooterContainer() {
     {
       name: "Home",
       to: "home"
+    },
+    {
+      name: "Portfólio",
+      to: "works"
     }
   ];
 

@@ -15,13 +15,13 @@ export default function ExperiencesContainer() {
           <Experiences.Subtitle>Criando experiências!</Experiences.Subtitle>
 
           <Experiences.Works>
-            {works.map((work, index) => {
-              const isHovered = hovered === work.title;
+            {works.map((work) => {
+              const isHovered = hovered === work.slug;
 
               return (
                 <Work
-                  key={index}
-                  handleHoverStart={() => setHovered(work.title)}
+                  key={work.slug}
+                  handleHoverStart={() => setHovered(work.slug)}
                   handleHoverEnd={() => setHovered("")}
                 >
                   {isHovered && <Work.Hovered />}
@@ -30,7 +30,13 @@ export default function ExperiencesContainer() {
 
                   <Work.Description>{work.description}</Work.Description>
 
-                  <Work.Link to={work.repository_url}>ler mais...</Work.Link>
+                  <Work.WrapperTecnologies>
+                    {work.tecnologies.map((tecnology) => (
+                      <Work.Tecnology tecnology={tecnology} key={tecnology} />
+                    ))}
+                  </Work.WrapperTecnologies>
+
+                  <Work.Link to={work.repository_url}>repositório.</Work.Link>
                 </Work>
               );
             })}

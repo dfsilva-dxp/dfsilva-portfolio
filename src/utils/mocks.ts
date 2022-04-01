@@ -1,26 +1,89 @@
 export const works = [
   {
-    title: "Art & Illustratio I",
+    title: "Ignews",
+    slug: "ignews",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews"
+      "O ignews é uma aplicação desenvolvida no curso Ignite da Rocketseat para consumo de conteúdo em texto.",
+    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews",
+    tecnologies: [
+      "HTML",
+      "SASS",
+      "Javascipt",
+      "Typescript",
+      "Nextjs",
+      "Jest",
+      "Prismic CMS",
+      "Fauna db",
+      "Strapi"
+    ]
   },
   {
-    title: "Art & Illustratio II",
+    title: "UI Tesla",
+    slug: "ui-tesla",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews"
+      "Esse projeto é um UI Clone da homepage do site Tesla feito em React.js. O projeto foi apresentado no canal da Rocketseat.",
+    repository_url: "https://github.com/daniel-silva-dxp/uiclone-tesla",
+    tecnologies: [
+      "HTML",
+      "CSS",
+      "Javascipt",
+      "Reactjs",
+      "Styled Components",
+      "Framer Motion"
+    ]
   },
   {
-    title: "Art & Illustratio III",
+    title: "Autenticação com Nextjs",
+    slug: "autenticação-com-nextjs",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews"
+      "Autenticação e permissões com Next auth - Curso React Rocketseat.",
+    repository_url: "https://github.com/daniel-silva-dxp/ignite-nextauth",
+    tecnologies: [
+      "HTML",
+      "SASS",
+      "Javascipt",
+      "Typescript",
+      "Nextjs",
+      "Next Auth"
+    ]
   },
   {
-    title: "Art & Illustratio IV",
+    title: "Dashgo",
+    slug: "dashgo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews"
+      "O Dashgo é uma aplicação dashboard desenvolvida no curso Ignite da Rocketseat utilizando o Nextjs e Chakra UI.",
+    repository_url: "https://github.com/daniel-silva-dxp/ignite-dashgo",
+    tecnologies: [
+      "HTML",
+      "CSS",
+      "Javascipt",
+      "Typescript",
+      "Nextjs",
+      "Chakra UI"
+    ]
+  },
+  {
+    title: "DT Money",
+    slug: "dt-money",
+    description:
+      "O dtmoney é uma aplicação desenvolvida no curso Ignite da Rocketseat para gestão financeira.",
+    repository_url: "https://github.com/daniel-silva-dxp/ignite-dtmoney",
+    tecnologies: ["HTML", "SASS", "Javascipt", "Typescript", "Reactjs"]
+  },
+  {
+    title: "Codelearning",
+    slug: "codelearning",
+    description:
+      "Esse projeto é uma plataforma de ensino desenvolvida em Nextjs e Chakra UI. O projeto foi apresentado no canal da Lucas Nhimi.",
+    repository_url: "https://github.com/daniel-silva-dxp/codelearning",
+    tecnologies: [
+      "HTML",
+      "Javascipt",
+      "Nextjs",
+      "Styled Components",
+      "Chakra UI",
+      "Dato CMS",
+      "Firebase"
+    ]
   }
 ];
