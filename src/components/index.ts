@@ -1,4 +1,5 @@
 export { default as About } from "./About";
+export { default as Analytics } from "./Analytics";
 export { default as Base } from "./Base";
 export { default as Burguer } from "./BurguerButton";
 export { default as ContactUs } from "./ContactUs";
