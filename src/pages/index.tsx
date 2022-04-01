@@ -1,6 +1,13 @@
 import { Element } from "react-scroll";
 
-import { About, ContactUs, Experiences, Header, Navbar } from "container";
+import {
+  About,
+  ContactUs,
+  Experiences,
+  Footer,
+  Header,
+  Navbar
+} from "container";
 
 export default function Home() {
   return (
@@ -20,6 +27,8 @@ export default function Home() {
       <Element name="contact-us">
         <ContactUs />
       </Element>
+
+      <Footer />
     </>
   );
 }

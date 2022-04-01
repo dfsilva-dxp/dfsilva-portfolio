@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
+    font-display: block;
     font-weight: 300;
     src: local(''),
         url('../fonts/quicksand-v28-latin-300.woff2') format('woff2')
@@ -12,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
+    font-display: block;
     font-weight: 400;
     src: local(''),
         url('../fonts/quicksand-v28-latin-regular.woff2') format('woff2')
@@ -20,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
+    font-display: block;
     font-weight: 600;
     src: local(''),
         url('../fonts/quicksand-v28-latin-600.woff2') format('woff2')
@@ -28,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Quicksand';
     font-style: normal;
+    font-display: block;
     font-weight: 700;
     src: local(''),
         url('../fonts/quicksand-v28-latin-700.woff2') format('woff2')

@@ -6,6 +6,7 @@ export { default as ContactUs } from "./ContactUs";
 export { default as DottedSquare } from "./DottedSquare";
 export { default as Experiences } from "./Experiences";
 export { default as FallowMe } from "./FallowMe";
+export { default as Footer } from "./Footer";
 export { default as Grid } from "./Grid";
 export { default as Header } from "./Header";
 export { default as Logo } from "./Logo";
