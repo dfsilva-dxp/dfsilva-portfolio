@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import * as NavLinks from "components/NavLinks/styles";
+
 export const Container = styled.footer`
   ${({ theme }) => css`
     padding-top: ${theme.spacings.xxlarge};
@@ -13,6 +15,12 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     padding-bottom: ${theme.spacings.xsmall};
+
+    @media (max-width: 767px) {
+      ${NavLinks.DesktopContainer} {
+        display: none;
+      }
+    }
   `}
 `;
 
@@ -28,6 +36,10 @@ export const ScrollTopContent = styled.div`
     svg {
       display: grid;
       place-items: center;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
     }
   `}
 `;

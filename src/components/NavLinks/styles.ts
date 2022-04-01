@@ -10,13 +10,55 @@ export const MobileContainer = styled(motion.ul)`
     opacity: 0;
     transition: opacity ${theme.transition.default};
     transition-delay: 1s;
+
+    a:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: ${theme.spacings.xxsmall};
+      transition: color ${theme.transition.default};
+      color: ${theme.colors.gray400};
+
+      svg {
+        font-size: ${theme.font.sizes.medium};
+      }
+
+      strong {
+        color: ${theme.colors.primary};
+      }
+    }
   `}
 `;
 
 export const DesktopContainer = styled(motion.ul)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      font-size: ${theme.font.sizes.xsmall};
+    }
+
+    a:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: ${theme.spacings.xxsmall};
+      transition: color ${theme.transition.default};
+      color: ${theme.colors.gray400};
+      padding-left: ${theme.spacings.xsmall};
+      border-left: 2px solid ${theme.colors.panel};
+
+      svg {
+        font-size: ${theme.font.sizes.small};
+      }
+
+      strong {
+        color: ${theme.colors.primary};
+      }
+    }
+  `}
 `;
 
 export const Hovered = styled(motion.span)`
@@ -56,21 +98,8 @@ export const DesktopItem = styled(motion.li)`
     cursor: pointer;
     font-weight: ${theme.font.weight.medium};
     color: ${theme.colors.gray400};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: ${theme.spacings.xxsmall};
-    transition: color ${theme.transition.default};
 
     &:hover {
-      color: ${theme.colors.primary};
-    }
-
-    span {
-      font-size: ${theme.font.sizes.small};
-    }
-
-    strong {
       color: ${theme.colors.primary};
     }
   `}

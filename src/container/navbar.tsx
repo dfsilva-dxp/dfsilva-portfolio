@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import Link from "next/link";
+import { Link as ReactScrollLink } from "react-scroll";
 import { RiPhoneLine } from "react-icons/ri";
 
 import { useMenu } from "hooks/useMenu";
@@ -34,23 +35,15 @@ export default function NavbarContainer() {
   const desktopItems = [
     {
       name: "Home",
-      icon: null,
       to: "home"
     },
     {
       name: "Portfólio",
-      icon: null,
       to: "works"
     },
     {
       name: "Vamos Conversar?",
-      icon: null,
       to: "contact-us"
-    },
-    {
-      name: "+55 11 9 5199 1612",
-      icon: <RiPhoneLine />,
-      to: ""
     }
   ];
 
@@ -73,11 +66,10 @@ export default function NavbarContainer() {
                   {desktopItems.map((item) => {
                     const isHovered = hovered === item.name;
                     return (
-                      <Link
+                      <ReactScrollLink
                         to={item.to}
                         key={item.name}
                         {...settings}
-                        style={{ fontSize: "1.4rem" }}
                       >
                         <NavLinks.DesktopItem
                           handleHoverStart={() => setHovered(item.name)}
@@ -86,18 +78,18 @@ export default function NavbarContainer() {
                         >
                           {isHovered && <NavLinks.Hovered />}
 
-                          {item.icon ? (
-                            <>
-                              <span>{item.icon}</span>
-                              <strong>{item.name}</strong>
-                            </>
-                          ) : (
-                            item.name
-                          )}
+                          {item.name}
                         </NavLinks.DesktopItem>
-                      </Link>
+                      </ReactScrollLink>
                     );
                   })}
+
+                  <Link href="https://contate.me/dfsilva.dev" passHref>
+                    <a target="_blank" rel="noopener">
+                      <RiPhoneLine />
+                      <strong>+55 11 9 5199 1612</strong>
+                    </a>
+                  </Link>
                 </NavLinks.DesktopContainer>
               </NavLinks>
             </Menu.Desktop>
@@ -118,7 +110,11 @@ export default function NavbarContainer() {
                 {mobileItems.map((item) => {
                   const isHovered = hovered === item.name;
                   return (
-                    <Link to={item.to} key={item.index} {...settings}>
+                    <ReactScrollLink
+                      to={item.to}
+                      key={item.index}
+                      {...settings}
+                    >
                       <NavLinks.MobileItem
                         index={item.index}
                         handleHoverStart={() => setHovered(item.name)}
@@ -129,9 +125,15 @@ export default function NavbarContainer() {
 
                         {item.name}
                       </NavLinks.MobileItem>
-                    </Link>
+                    </ReactScrollLink>
                   );
                 })}
+                <Link href="https://contate.me/dfsilva.dev" passHref>
+                  <a target="_blank" rel="noopener">
+                    <RiPhoneLine />
+                    <strong>+55 11 9 5199 1612</strong>
+                  </a>
+                </Link>
               </NavLinks.MobileContainer>
             </NavLinks>
           </Menu.Content>
