@@ -8,6 +8,7 @@ export default function Logo() {
         height="36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        aria-label="Logo Daniel Silva - Front-End Developer"
       >
         <path
           d="M0 35.288h35.288V0H0v35.288Zm28.23-28.23v4.936L11.416 28.23H7.058v-4.902l16.848-16.27h4.324Zm0 11.803v9.37h-9.7l9.7-9.37ZM16.794 7.058l-9.736 9.401V7.058h9.736Z"
