@@ -86,7 +86,7 @@ export default function NavbarContainer() {
 
                   <Link href="https://contate.me/dfsilva.dev" passHref>
                     <a target="_blank" rel="noopener">
-                      <RiPhoneLine />
+                      <RiPhoneLine title="Phone Icon" />
                       <strong>+55 11 9 5199 1612</strong>
                     </a>
                   </Link>

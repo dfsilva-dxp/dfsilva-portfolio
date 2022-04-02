@@ -25,7 +25,7 @@ export default function ContacUsContainer() {
               <ContactUs.Address>
                 <ContactUs.Group>
                   <ContactUs.Icon>
-                    <TiLocationOutline />
+                    <TiLocationOutline title="Location Icon" />
                   </ContactUs.Icon>
                   <ContactUs.Paragraph>
                     Suzano - São Paulo - Brasil
@@ -34,7 +34,7 @@ export default function ContacUsContainer() {
 
                 <ContactUs.Group>
                   <ContactUs.Icon>
-                    <TiMail />
+                    <TiMail title="Mail Icon" />
                   </ContactUs.Icon>
                   <ContactUs.Paragraph>
                     dfsilva.dxp@gmail.com
@@ -43,7 +43,7 @@ export default function ContacUsContainer() {
 
                 <ContactUs.Group>
                   <ContactUs.Icon>
-                    <RiPhoneLine />
+                    <RiPhoneLine title="Phone Icon" />
                   </ContactUs.Icon>
                   <ContactUs.Paragraph>+55 11 9 5199 1612</ContactUs.Paragraph>
                 </ContactUs.Group>
@@ -53,7 +53,13 @@ export default function ContacUsContainer() {
             </ContactUs.Left>
 
             <ContactUs.Right>
-              <Image src="/img/logo-contactus.svg" width={271} height={54} />
+              <Image
+                src="/img/logo-contactus.svg"
+                alt="Logo Daniel Silva - Front-End Developer"
+                title="Logo Daniel Silva - Front-End Developer"
+                width={271}
+                height={54}
+              />
             </ContactUs.Right>
           </Grid>
         </ContactUs>

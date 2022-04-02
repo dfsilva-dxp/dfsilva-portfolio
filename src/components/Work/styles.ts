@@ -5,7 +5,7 @@ import * as NavLinks from "components/NavLinks/styles";
 
 export const Container = styled(motion.span)`
   ${({ theme }) => css`
-    padding: ${theme.spacings.xxsmall} ${theme.spacings.medium};
+    padding: ${theme.spacings.medium};
     display: grid;
     gap: ${theme.spacings.xxsmall};
     grid-template-rows: 2.4rem 11rem auto;

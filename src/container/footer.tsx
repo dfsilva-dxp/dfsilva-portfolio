@@ -34,7 +34,7 @@ export default function FooterContainer() {
 
               <Link href="https://contate.me/dfsilva.dev" passHref>
                 <a target="_blank" rel="noopener">
-                  <RiPhoneLine />
+                  <RiPhoneLine title="Phone Icon" />
                   <strong>+55 11 9 5199 1612</strong>
                 </a>
               </Link>
@@ -45,7 +45,7 @@ export default function FooterContainer() {
             </ReactScrollLink>
 
             <Footer.Icon>
-              <RiHandHeartLine />
+              <RiHandHeartLine title="Hand Heart Icon" />
               Feito com amor!
             </Footer.Icon>
           </Footer.Content>

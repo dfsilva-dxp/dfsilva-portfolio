@@ -13,17 +13,17 @@ export default function FallowMeContainer() {
   const socialIcons = [
     {
       name: "github",
-      icon: <RiGithubLine />,
+      icon: <RiGithubLine title="GitHub" />,
       url: "https://github.com/daniel-silva-dxp"
     },
     {
       name: "instagram",
-      icon: <RiInstagramLine />,
+      icon: <RiInstagramLine title="Instagram" />,
       url: "https://www.instagram.com/daniel.dxp/"
     },
     {
       name: "linkedin",
-      icon: <RiLinkedinBoxLine />,
+      icon: <RiLinkedinBoxLine title="Linkedin" />,
       url: "https://www.linkedin.com/in/daniel-silva-dxp/"
     }
   ];
