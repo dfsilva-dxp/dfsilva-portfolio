@@ -22,7 +22,7 @@ export default function AboutContainer() {
                 brPosition="tr"
               />
               <PanelSkill
-                title="Front-End Developer"
+                title="Artista de Pixel"
                 imageURL="/img/pixel-perfect.svg"
               />
               <PanelSkill
