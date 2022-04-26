@@ -4,7 +4,7 @@ export const works = [
     slug: "ignews",
     description:
       "O ignews é uma aplicação desenvolvida no curso Ignite da Rocketseat para consumo de conteúdo em texto.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-ignews",
+    repository_url: "https://github.com/dfsilva-dxp/ignite-ignews",
     tecnologies: [
       "HTML",
       "SASS",
@@ -22,7 +22,7 @@ export const works = [
     slug: "ui-tesla",
     description:
       "Esse projeto é um UI Clone da homepage do site Tesla feito em React.js. O projeto foi apresentado no canal da Rocketseat.",
-    repository_url: "https://github.com/daniel-silva-dxp/uiclone-tesla",
+    repository_url: "https://github.com/dfsilva-dxp/uiclone-tesla",
     tecnologies: [
       "HTML",
       "CSS",
@@ -37,7 +37,7 @@ export const works = [
     slug: "autenticação-com-nextjs",
     description:
       "Autenticação e permissões com Next auth - Curso React Rocketseat.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-nextauth",
+    repository_url: "https://github.com/dfsilva-dxp/ignite-nextauth",
     tecnologies: [
       "HTML",
       "SASS",
@@ -52,7 +52,7 @@ export const works = [
     slug: "dashgo",
     description:
       "O Dashgo é uma aplicação dashboard desenvolvida no curso Ignite da Rocketseat utilizando o Nextjs e Chakra UI.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-dashgo",
+    repository_url: "https://github.com/dfsilva-dxp/ignite-dashgo",
     tecnologies: [
       "HTML",
       "CSS",
@@ -67,7 +67,7 @@ export const works = [
     slug: "dt-money",
     description:
       "O dtmoney é uma aplicação desenvolvida no curso Ignite da Rocketseat para gestão financeira.",
-    repository_url: "https://github.com/daniel-silva-dxp/ignite-dtmoney",
+    repository_url: "https://github.com/dfsilva-dxp/ignite-dtmoney",
     tecnologies: ["HTML", "SASS", "Javascipt", "Typescript", "Reactjs"]
   },
   {
@@ -75,7 +75,7 @@ export const works = [
     slug: "codelearning",
     description:
       "Esse projeto é uma plataforma de ensino desenvolvida em Nextjs e Chakra UI. O projeto foi apresentado no canal da Lucas Nhimi.",
-    repository_url: "https://github.com/daniel-silva-dxp/codelearning",
+    repository_url: "https://github.com/dfsilva-dxp/codelearning",
     tecnologies: [
       "HTML",
       "Javascipt",

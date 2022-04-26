@@ -14,7 +14,7 @@ export default function FallowMeContainer() {
     {
       name: "github",
       icon: <RiGithubLine title="GitHub" />,
-      url: "https://github.com/daniel-silva-dxp"
+      url: "https://github.com/dfsilva-dxp"
     },
     {
       name: "instagram",
